@@ -22,6 +22,15 @@
       padding: 3.625rem 1.8rem 0.875rem 1.5rem;
   }
 
+  .mylogo {
+    font-family: var(--pry-font-family);
+  }
+  
+  .mylogo,
+  .nav-menu .fas {
+      color: var(--pry-color);
+  }
+
   .nav-menu .fas {
       align-self: center;
   }
