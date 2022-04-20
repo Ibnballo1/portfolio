@@ -4,6 +4,8 @@
     --pry-font-family: 'Poppins', sans-serif;
     --pry-font-style: normal;
     --pry-color: #6070ff;
+    --sec-color: #172b4d;
+    --tertiary-color: #344563;
     --pry-bgcolor: #e5e5e5;
     --sec-bgcolor: #fff;
 }
@@ -20,7 +22,6 @@
 
   .headers {
       background-color: var(--sec-bgcolor);
-      border: 2px solid red;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -47,7 +48,6 @@
 
   .about-me {
       background-color: var(--sec-bgcolor);
-      border: 2px solid green;
       height: 98.1vh;
   }
 
@@ -61,5 +61,26 @@
       right: 0;
       margin-top: 0.45rem;
       height: 93vh;
+  }
+
+  .about-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       border: 2px solid red;
+      padding: 1.5rem;
+      height: 98.1vh;
+  }
+
+  .name {
+      border: 2px solid green;
+      margin: 12px 0;
+  }
+
+  .name h1 {
+      font-family: var(--pry-font-family);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 3.25rem;
   }
