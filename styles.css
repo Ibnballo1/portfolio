@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
 
 :root {
     --pry-font-family: 'Poppins', sans-serif;
@@ -92,4 +92,17 @@
       font-weight: 400;
       font-size: 1rem;
       line-height: 1.5rem;
+  }
+
+  .letsconnect {
+      margin: 0;
+  }
+
+  .name .lets-connect {
+      font-family: var(--pry-font-family);
+      font-style: var(--pry-font-style);
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: var(--pry-color);
   }
