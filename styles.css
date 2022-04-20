@@ -109,6 +109,7 @@ body {
 }
 
 .social-media-icons {
+  list-style-type: none;
   display: flex;
   justify-content: space-between;
   width: 170.17px;
