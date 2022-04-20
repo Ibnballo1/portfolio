@@ -1,8 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap');
+
+:root {
+    --pry-font-family: 'Poppins', sans-serif;
+    --pry-color: #6070ff; 
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
   
   body {
     background: #e5e5e5;
+  }
+
+  .headers {
+      border: 2px solid red;
+      display: flex;
+      justify-content: space-between;
+      padding: 3.625rem 1.8rem 0.875rem 1.5rem;
+  }
+
+  .nav-menu .fas {
+      align-self: center;
   }
