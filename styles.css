@@ -2,7 +2,10 @@
 
 :root {
     --pry-font-family: 'Poppins', sans-serif;
-    --pry-color: #6070ff; 
+    --pry-font-style: normal;
+    --pry-color: #6070ff;
+    --pry-bgcolor: #e5e5e5;
+    --sec-bgcolor: #fff;
 }
 
 * {
@@ -16,19 +19,26 @@
   }
 
   .headers {
+      background-color: var(--sec-bgcolor);
       border: 2px solid red;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 3.625rem 1.8rem 0.875rem 1.5rem;
   }
 
   .mylogo {
     font-family: var(--pry-font-family);
+    font-style: var(--pry-font-style);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
   }
-  
+
   .mylogo,
   .nav-menu .fas {
       color: var(--pry-color);
+      text-align: center;
   }
 
   .nav-menu .fas {
