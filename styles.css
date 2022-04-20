@@ -44,3 +44,7 @@
   .nav-menu .fas {
       align-self: center;
   }
+
+  .about-me {
+      background-image: url('/Images/header-bg-img.svg');
+  }
