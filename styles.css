@@ -6,6 +6,7 @@
   --pry-color: #6070ff;
   --sec-color: #172b4d;
   --tertiary-color: #344563;
+  --other-color: #505f79;
   --pry-bgcolor: #e5e5e5;
   --sec-bgcolor: #fff;
 }
@@ -119,25 +120,25 @@ body {
 .fa-twitter {
   width: 19.99px;
   height: 19.96px;
-  color: #505f79;
+  color: var(--other-color);
 }
 
 .fa-linkedin-in {
   width: 20px;
   height: 20px;
-  color: #505f79;
+  color: var(--other-color);
 }
 
 .fa-medium {
   width: 20px;
   height: 16px;
-  color: #505f79;
+  color: var(--other-color);
 }
 
 .fa-github {
   width: 17.99px;
   height: 20px;
-  color: #505f79;
+  color: var(--other-color);
 }
 
 .fa-angellist {
