@@ -46,5 +46,20 @@
   }
 
   .about-me {
-      background-image: url('/Images/header-bg-img.svg');
+      background-color: var(--sec-bgcolor);
+      border: 2px solid green;
+      height: 98.1vh;
+  }
+
+  .img-container {
+      background-image: url('/Images/header-shapes\ mobile.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-top: 0.45rem;
+      height: 93vh;
+      border: 2px solid red;
   }
