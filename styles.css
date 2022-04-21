@@ -165,4 +165,17 @@ body {
   height: 69.96vh;
   background-color: var(--sec-bgcolor);
   border-radius: 1rem;
+  padding: 1rem;
+}
+
+.image {
+  border: 2px solid green;
+  height: 27.9vh;
+  border-radius: 8px;
+}
+
+.work-details {
+  border: 2px solid brown;
+  margin: 12px 0;
+  height: 36.5vh;
 }
