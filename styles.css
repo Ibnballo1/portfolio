@@ -169,13 +169,18 @@ body {
 }
 
 .image {
-  border: 2px solid green;
   height: 27.9vh;
-  border-radius: 8px;
 }
 
 .work-details {
   border: 2px solid brown;
   margin: 12px 0;
   height: 36.5vh;
+}
+
+.project-img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
