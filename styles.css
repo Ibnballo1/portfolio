@@ -150,9 +150,15 @@ body {
 }
 
 .work-section {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 88px;
   padding: 7.125rem 1.5rem;
   border: 2px solid red;
-  height: 174.25rem;
+  height: 353.4vh;
+}
+
+.work-section .works {
+  border: 2px solid green;
+  height: 69.96vh;
 }
