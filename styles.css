@@ -148,3 +148,11 @@ body {
   width: 14.17px;
   height: 20px;
 }
+
+.work-section {
+  display: flex;
+  flex-direction: column;
+  padding: 7.125rem 1.5rem;
+  border: 2px solid red;
+  height: 174.25rem;
+}
