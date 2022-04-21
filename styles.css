@@ -159,6 +159,10 @@ body {
 }
 
 .work-section .works {
-  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dfe1e6;
   height: 69.96vh;
+  background-color: var(--sec-bgcolor);
+  border-radius: 1rem;
 }
