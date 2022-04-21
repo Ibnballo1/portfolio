@@ -1,4 +1,4 @@
-# Hello-Microverse
+# Portfolio: setup and mobile version skeleton
 In this project, I will be creating a *Portfolio setup and mobile friendly skeleton* repo. This will be done by first creating a feature branch then add a **README.md** file. The project will have a .gitignore file to ignore all unneccesary files together with two files for HTML and CSS.
 
 # Built With
@@ -30,4 +30,4 @@ Kindly give a :hearts: if you like this.
 - I expressed my gratitude for everyone.
 
 # License
-This project is [MIT](C:\Users\J T COMPUTER\Hello-Microverse\MIT.md).
+This project is [MIT](C:\Users\J T COMPUTER\Microverse-April18\portfolio\MIT.md).
