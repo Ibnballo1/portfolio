@@ -48,6 +48,8 @@ body {
 }
 
 .about-me {
+  display: flex;
+  flex-direction: column;
   background-color: var(--sec-bgcolor);
   border-bottom-left-radius: 70px;
   height: 98.1vh;
