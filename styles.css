@@ -195,3 +195,36 @@ body {
   color: var(--sec-color);
   height: 36px;
 }
+
+.frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+  height: 32px;
+}
+
+.items {
+  font-family: var(--pry-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  align-self: center;
+}
+
+.item1 {
+  color: #344563;
+}
+
+.item2,
+.item3 {
+  color: #7A869A;
+}
+
+.counter {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #c1c7d0;
+}
