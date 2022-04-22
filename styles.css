@@ -320,7 +320,6 @@ a {
 }
 
 .about-page {
-  border: 2px solid red;
   border-top-right-radius: 70px;
   padding: 7.125rem 1.5rem;
   background-color: var(--sec-bgcolor);
@@ -349,4 +348,14 @@ a {
 
 .lc-abt {
   margin: 12px 0;
+}
+
+.resume-btn {
+  width: 10.125rem;
+}
+
+.skills {
+  border: 2px solid red;
+  height: 29.009375rem;
+  margin: 24px 0;
 }
