@@ -51,6 +51,10 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -243,3 +247,44 @@ ul {
   color: var(--tertiary-color);
 }
 
+.tags {
+  display: flex;
+  justify-content: space-between;
+  width: 12.6875rem;
+  height: 1.5rem;
+  margin: 12px 0;
+}
+
+.tags li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+}
+
+.tag-1 {
+  width: 3.3125rem;
+  border-radius: 8px;
+  background-color: #ebebff;
+}
+
+.tag-2 {
+  width: 2.8125rem;
+  border-radius: 8px;
+  background-color: #ebebff;
+}
+
+.tag-3 {
+  width: 5.5625rem;
+  border-radius: 8px;
+  background-color: #ebebff;
+}
+
+.tag-link {
+  font-family: var(--pry-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--pry-color);
+}
