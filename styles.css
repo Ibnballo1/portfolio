@@ -172,15 +172,26 @@ body {
   height: 27.9vh;
 }
 
-.work-details {
-  border: 2px solid brown;
-  margin: 12px 0;
-  height: 36.5vh;
-}
-
 .project-img {
   border-radius: 8px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.work-details {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid brown;
+  margin: 12px 0;
+  height: 36.5vh;
+}
+
+.project-title {
+  font-family: var(--pry-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--sec-color);
+  height: 36px;
 }
