@@ -355,22 +355,24 @@ a {
 }
 
 .skills {
-  border: 2px solid red;
   height: 29.009375rem;
   margin: 24px 0;
 }
 
 .skill {
-  border: 2px solid green;
+  border-bottom: 1px solid #dfe1e6;;
   height: 4.5rem;
   padding: 1.5rem 0.75rem;
+}
+
+.lang {
+  border-bottom: hidden;
 }
 
 .skill-1,
 .skill-2,
 .skill-3 {
   width: 14.8125rem;
-  border: 2px solid orange;
   display: inline-block;
   color: #000;
   font-family: var(--pry-font-family);
@@ -378,4 +380,47 @@ a {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
+}
+
+.arrow {
+  margin-left: 1.625rem;
+  color: #acb7c3;
+  width: 12px;
+  height: 6px;
+}
+
+.lang-lists {
+  padding: 0.75rem;
+}
+
+.lang-list {
+  display: flex;
+  align-items: center;
+  width: 18.9375rem;
+  height: 4.17rem;
+  background-color: #f7f7f9;
+  padding: 0.5625rem 0 0.6075rem 0.75rem;
+}
+
+.lang-list-2 {
+  margin: 12px 0;
+}
+
+.lang-list-img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.lang-list-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lang-list-name {
+  font-family: var(--pry-font-family);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
 }
