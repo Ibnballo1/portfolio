@@ -170,7 +170,7 @@ a {
   display: flex;
   flex-direction: column;
   border: 1px solid #dfe1e6;
-  height: 69.96vh;
+  height: 33.5rem;
   background-color: var(--sec-bgcolor);
   border-radius: 1rem;
   padding: 1rem;
@@ -190,9 +190,7 @@ a {
 .work-details {
   display: flex;
   flex-direction: column;
-  border: 2px solid brown;
   margin: 12px 0;
-  height: 36.5vh;
 }
 
 .project-title {
@@ -287,4 +285,19 @@ a {
   font-size: 0.75rem;
   line-height: 1rem;
   color: var(--pry-color);
+}
+
+.project-btn {
+  border: 1px solid #6070FF;
+  width: 7.75rem;
+  height: 3rem;
+  color: var(--pry-color);
+  background-color: var(--sec-bgcolor);
+  border-radius: 8px;
+  font-family: var(--pry-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  margin: 12px 0 0 0;
 }
