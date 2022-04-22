@@ -318,3 +318,9 @@ a {
   background-color: #2230d2;
   color: #fff;
 }
+
+.about-page {
+  border: 2px solid red;
+  padding: 7.125rem 1.5rem;
+  background-color: var(--sec-bgcolor);
+}
