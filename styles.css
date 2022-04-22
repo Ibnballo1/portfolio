@@ -359,3 +359,23 @@ a {
   height: 29.009375rem;
   margin: 24px 0;
 }
+
+.skill {
+  border: 2px solid green;
+  height: 4.5rem;
+  padding: 1.5rem 0.75rem;
+}
+
+.skill-1,
+.skill-2,
+.skill-3 {
+  width: 14.8125rem;
+  border: 2px solid orange;
+  display: inline-block;
+  color: #000;
+  font-family: var(--pry-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
