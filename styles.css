@@ -18,7 +18,7 @@
 }
 
 body {
-  background: #e5e5e5;
+  background: var(--pry-bgcolor);
 }
 
 .headers {
@@ -162,18 +162,25 @@ a {
   grid-template-columns: 1fr;
   gap: 88px;
   padding: 7.125rem 1.5rem;
-  border: 2px solid red;
-  height: 353.4vh;
 }
 
 .work-section .works {
   display: flex;
   flex-direction: column;
   border: 1px solid #dfe1e6;
-  height: 33.5rem;
   background-color: var(--sec-bgcolor);
   border-radius: 1rem;
   padding: 1rem;
+}
+
+.work1,
+.work3 {
+  height: 34.5rem;
+}
+
+.work2,
+.work4 {
+  height: 37.25rem;
 }
 
 .image {
@@ -199,7 +206,6 @@ a {
   font-weight: 700;
   font-size: 2rem;
   color: var(--sec-color);
-  height: 36px;
 }
 
 .frame {
@@ -207,6 +213,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: 12px 0;
+  width: 14.75rem;
   height: 32px;
 }
 
