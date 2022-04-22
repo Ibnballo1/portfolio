@@ -232,7 +232,7 @@ a {
 
 .item2,
 .item3 {
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .counter {
@@ -295,7 +295,7 @@ a {
 }
 
 .project-btn {
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   width: 7.75rem;
   height: 3rem;
   color: var(--pry-color);
@@ -310,8 +310,8 @@ a {
 }
 
 .project-btn:hover {
- background-color: var(--pry-color);
- color: #fff; 
+  background-color: var(--pry-color);
+  color: #fff;
 }
 
 .project-btn:active {
@@ -360,7 +360,7 @@ a {
 }
 
 .skill {
-  border-bottom: 1px solid #dfe1e6;;
+  border-bottom: 1px solid #dfe1e6;
   height: 4.5rem;
   padding: 1.5rem 0.75rem;
 }
