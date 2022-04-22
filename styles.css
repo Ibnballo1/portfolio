@@ -47,6 +47,10 @@ body {
   align-self: center;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -228,3 +232,14 @@ body {
   border-radius: 50%;
   background-color: #c1c7d0;
 }
+
+.primary-text {
+  height: 76px;
+  font-family: var(--pry-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: var(--tertiary-color);
+}
+
