@@ -308,3 +308,13 @@ a {
   line-height: 1.5rem;
   margin: 12px 0 0 0;
 }
+
+.project-btn:hover {
+ background-color: var(--pry-color);
+ color: #fff; 
+}
+
+.project-btn:active {
+  background-color: #2230d2;
+  color: #fff;
+}
