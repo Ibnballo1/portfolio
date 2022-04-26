@@ -431,11 +431,18 @@ footer {
 
 .footer {
   border: 2px solid red;
-  height: 98.73vh;
+  height: 48.7rem;
   background-color: var(--pry-color);
   border-top-left-radius: 70px;
 }
 
 .footer-bg-img {
-  background-image: url('./Images/contact-form-bgimg.png');
+  border: 2px solid yellowgreen;
+  height: 47.1rem;
+  background-image: url('/Images/contact-form-bgimg.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  left: 153px;
+  right: 0;
 }
