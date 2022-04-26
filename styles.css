@@ -455,3 +455,14 @@ footer {
   border: 2px solid yellowgreen;
   margin-top: 103px;
 }
+
+.contact-me {
+  border: 2px solid brown;
+  color: var(--sec-bgcolor);
+  font-family: var(--pry-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  margin-bottom: 0.75rem;
+}
