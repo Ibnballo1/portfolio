@@ -441,7 +441,6 @@ footer {
 }
 
 .footer-bg-img {
-  border: 2px solid yellowgreen;
   height: 47.1rem;
   background-image: url('/Images/contact-form-bgimg.png');
   background-repeat: no-repeat;
@@ -451,4 +450,8 @@ footer {
   right: 0;
 }
 
-
+.contact-details {
+  text-align: center;
+  border: 2px solid yellowgreen;
+  margin-top: 103px;
+}
