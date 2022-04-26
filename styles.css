@@ -435,3 +435,7 @@ footer {
   background-color: var(--pry-color);
   border-top-left-radius: 70px;
 }
+
+.footer-bg-img {
+  background-image: url('./Images/contact-form-bgimg.png');
+}
