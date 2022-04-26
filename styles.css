@@ -453,11 +453,10 @@ footer {
 .contact-details {
   text-align: center;
   border: 2px solid yellowgreen;
-  margin-top: 103px;
+  margin-top: 6.4375rem;
 }
 
 .contact-me {
-  border: 2px solid brown;
   color: var(--sec-bgcolor);
   font-family: var(--pry-font-family);
   font-style: normal;
@@ -465,4 +464,13 @@ footer {
   font-size: 2.5rem;
   line-height: 3.25rem;
   margin-bottom: 0.75rem;
+}
+
+.info {
+  font-family: var(--pry-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #ebebff;
 }
