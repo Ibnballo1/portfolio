@@ -425,4 +425,13 @@ a {
   line-height: 1.25rem;
 }
 
+footer {
+  background-color: #fff;
+}
 
+.footer {
+  border: 2px solid red;
+  height: 98.73vh;
+  background-color: var(--pry-color);
+  border-top-left-radius: 70px;
+}
