@@ -452,7 +452,6 @@ footer {
 
 .contact-details {
   text-align: center;
-  border: 2px solid yellowgreen;
   margin-top: 6.4375rem;
 }
 
@@ -491,10 +490,13 @@ footer {
   margin-bottom: 1.25rem;
 }
 
-input[type=text] {
+input[type=text],
+input[type=email] {
   font-family: var(--pry-font-family);
   font-weight: 400;
-  color: red;
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
+  color: var(--sec-color);
 }
 
 /*#form-button {
