@@ -605,14 +605,37 @@ textarea[name=userMessage] {
     line-height: 1.75rem;
   }
 
+  .work-section {
+    padding: 8.875rem;
+    gap: 8.875rem;
+  }
+
   .work-section .works {
     display: flex;
     flex-direction: row;
     border: 1px solid #dfe1e6;
     background-color: var(--sec-bgcolor);
     border-radius: 1rem;
-    margin: 8.875rem;
-    padding: 1rem;
+    padding: 1.5rem;
+    height: 31rem;
   }
   
+  .image {
+    height: 28rem;
+    margin-right: 1.375rem;
+  }
+
+  .work-details {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .work2 .image,
+  .work4 .image {
+    order: 2;
+    margin-right: 0;
+    margin-left: 1.375rem;
+  }
 }
