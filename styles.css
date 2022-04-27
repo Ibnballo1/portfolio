@@ -638,4 +638,47 @@ textarea[name=userMessage] {
     margin-right: 0;
     margin-left: 1.375rem;
   }
+
+  .about-page {
+    border: 2px solid red;
+    display: flex;
+    border-top-right-radius: 70px;
+    padding: 8.875rem;
+    background-color: var(--sec-bgcolor);
+  }
+
+  .abt-box {
+    border: 2px solid green;
+    width: 27.9375rem;
+    margin-right: 1.5625rem;
+  }
+  
+  .abt {
+    height: 6.3125rem;
+    font-family: var(--pry-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    color: var(--sec-color);
+    margin: 12px 0;
+  }
+  
+  .abt-me-page {
+    height: 9rem;
+    font-family: var(--pry-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--tertiary-color);
+  }
+  
+  .lc-abt {
+    margin: 12px 0;
+  }
+  
+  .resume-btn {
+    width: 10.125rem;
+  }
 }
