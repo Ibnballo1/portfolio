@@ -47,6 +47,10 @@ body {
   align-self: center;
 }
 
+nav ul {
+  display: none;
+}
+
 ul {
   list-style-type: none;
 }
@@ -539,4 +543,9 @@ textarea[name=userMessage] {
 #form-button:focus {
   background-color: #2230d2;
   color: var(--sec-bgcolor);
+}
+
+/* Desktop Version */
+@media only screen and (min-width: 769px) {
+  
 }
