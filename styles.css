@@ -546,15 +546,73 @@ textarea[name=userMessage] {
 }
 
 /* Desktop Version */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
+  .headers {
+    margin-top: 0.0625rem;
+    padding-top: 0.9375rem;
+    align-items: center;
+  }
+
   nav ul {
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
     width: 16.1875rem;
+  }
+
+  nav ul li a {
+    font-family: var(--pry-font-family);
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    color: #344563;
   }
 
   nav .fas {
     display: none;
   }
+
+  .about-me {
+    padding-right: 0.5rem;
+    padding-left: 2.1625rem;
+    height: 916px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .img-container {
+    background-image: url('/Images/desktop-bgimg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 2.1625rem;
+    right: 0.5rem;
+    margin-top: 2.8125rem;
+    height: 721.46px;
+  }
+
+  .about-container {
+    height: 721.46px;
+    margin: 2.8125rem 15.75rem 0 14.0875rem;
+    padding: 0;
+  }
+
+  .about-container h1 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+  .about-container p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .work-section .works {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #dfe1e6;
+    background-color: var(--sec-bgcolor);
+    border-radius: 1rem;
+    margin: 8.875rem;
+    padding: 1rem;
+  }
+  
 }
