@@ -499,6 +499,23 @@ input[type=email] {
   color: var(--sec-color);
 }
 
+textarea {
+  border: 1px solid #cfd8dc;
+  background-color: var(--sec-bgcolor);
+  height: 10.625rem;
+  border-radius: 8px;
+  margin-bottom: 1.375rem;
+  padding: 0.9375rem 2.375rem 0.9375rem 1rem;
+}
+
+textarea[name=userMessage] {
+  font-family: var(--pry-font-family);
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: #b3bac5;
+}
+
 /*#form-button {
   width: 140px;
   height: 48px;
