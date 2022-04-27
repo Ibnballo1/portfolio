@@ -547,5 +547,14 @@ textarea[name=userMessage] {
 
 /* Desktop Version */
 @media only screen and (min-width: 769px) {
-  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    width: 16.1875rem;
+  }
+
+  nav .fas {
+    display: none;
+  }
 }
