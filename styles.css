@@ -576,6 +576,270 @@ textarea[name=userMessage] {
     padding-left: 2.1625rem;
     height: 916px;
   }
+
+  .img-container {
+    background-image: url('/Images/desktop-bgimg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 2.1625rem;
+    right: 0.5rem;
+    margin-top: 2.8125rem;
+    height: 721.46px;
+  }
+
+  .about-container {
+    height: 721.46px;
+    margin: 2.8125rem 15.75rem 0 14.0875rem;
+    padding: 0;
+  }
+
+  .about-container h1 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+  .about-container p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .work-section {
+    padding: 8.875rem;
+    gap: 8.875rem;
+  }
+
+  .work-section .works {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #dfe1e6;
+    background-color: var(--sec-bgcolor);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    height: 31rem;
+  }
+  
+  .image {
+    height: 28rem;
+    margin-right: 1.375rem;
+  }
+
+  .work-details {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .work2 .image,
+  .work4 .image {
+    order: 2;
+    margin-right: 0;
+    margin-left: 1.375rem;
+  }
+
+  .about-page {
+    display: flex;
+    border-top-right-radius: 70px;
+    padding: 8.875rem;
+    background-color: var(--sec-bgcolor);
+  }
+
+  .abt-box {
+    width: 27.9375rem;
+    margin-right: 1.5625rem;
+  }
+
+  .skills {
+    height: 29.009375rem;
+    margin: 24px 0;
+  }
+  
+  .skill {
+    border-bottom: 1px solid #dfe1e6;
+    height: 4.5rem;
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .skill-1,
+  .skill-2,
+  .skill-3 {
+    width: 36.375rem;
+  }
+  
+  .lang-lists {
+    display: flex;
+    width: 25.875rem;
+    padding: 0.75rem;
+  }
+  
+  .lang-list {
+    display: flex;
+    flex-direction: column;
+    width: 7.625rem;
+    height: 7.5rem;
+  }
+  
+  .lang-list-2 {
+    margin: 0 0.75rem;
+  }
+  
+  .footer {
+    height: 52.875rem;
+  }
+  
+  .footer-bg-img {
+    height: 44.91875rem;
+    background-image: url('/Images/footer-desktop-bgimg.png');
+    background-position: center;
+    background-size: cover;
+    margin-top: 4.943125rem;
+    left: 4.70875rem;
+    right: 4.625rem;
+  }
+  
+  .info {
+    width: 35.5625rem;
+    height: 6.375rem;
+  }
+  .contact-form input {
+    width: 27.9375rem;
+  }
+  
+  #form-button {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .img-container {
+    background-image: url('/Images/desktop-bgimg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 2.1625rem;
+    right: 0.5rem;
+    margin-top: 2.8125rem;
+    height: 721.46px;
+  }
+
+  .about-container {
+    height: 721.46px;
+    margin: 2.8125rem 15.75rem 0 14.0875rem;
+    padding: 0;
+  }
+
+  .about-container h1 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+  .about-container p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .work-section {
+    padding: 8.875rem;
+    gap: 8.875rem;
+  }
+
+  .work-section .works {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #dfe1e6;
+    background-color: var(--sec-bgcolor);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    height: 31rem;
+  }
+  
+  .image {
+    height: 28rem;
+    margin-right: 1.375rem;
+  }
+
+  .work-details {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .work2 .image,
+  .work4 .image {
+    order: 2;
+    margin-right: 0;
+    margin-left: 1.375rem;
+  }
+
+  .about-page {
+    display: flex;
+    border-top-right-radius: 70px;
+    padding: 8.875rem;
+    background-color: var(--sec-bgcolor);
+  }
+
+  .abt-box {
+    width: 27.9375rem;
+    margin-right: 1.5625rem;
+  }
+
+  .skills {
+    height: 29.009375rem;
+    margin: 24px 0;
+  }
+  
+  .skill {
+    border-bottom: 1px solid #dfe1e6;
+    height: 4.5rem;
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .skill-1,
+  .skill-2,
+  .skill-3 {
+    width: 36.375rem;
+  }
+  
+  .lang-lists {
+    display: flex;
+    width: 25.875rem;
+    padding: 0.75rem;
+  }
+  
+  .lang-list {
+    display: flex;
+    flex-direction: column;
+    width: 7.625rem;
+    height: 7.5rem;
+  }
+  
+  .lang-list-2 {
+    margin: 0 0.75rem;
+  }
+  
+  .footer {
+    height: 52.875rem;
+  }
+  
+  .footer-bg-img {
+    height: 44.91875rem;
+    background-image: url('/Images/footer-desktop-bgimg.png');
+    background-position: center;
+    background-size: cover;
+    margin-top: 4.943125rem;
+    left: 4.70875rem;
+    right: 4.625rem;
+  }
+  
+  .info {
+    width: 35.5625rem;
+    height: 6.375rem;
+  }
+  .contact-form input {
+    width: 27.9375rem;
+  }
+  
+  #form-button {
+    margin: 0 auto;
+  } 
 }
 
 @media only screen and (min-width: 1440px) {
