@@ -744,31 +744,26 @@ textarea[name=userMessage] {
   }
 
   .abt-box {
-    width: 27.9375rem;
+    width: 30.9375rem;
     margin-right: 1.5625rem;
   }
 
   .skills {
     height: 29.009375rem;
-    margin: 24px 0;
+    margin: 12px 0;
   }
   
   .skill {
+    display: inline-block;
     border-bottom: 1px solid #dfe1e6;
     height: 4.5rem;
-    padding: 1.5rem 0.75rem;
-  }
-  
-  .skill-1,
-  .skill-2,
-  .skill-3 {
-    width: 36.375rem;
+    padding: 0.3rem 0.3rem;
   }
   
   .lang-lists {
     display: flex;
-    width: 25.875rem;
-    padding: 0.75rem;
+    width: 16.9375rem;
+    padding: 0.375rem;
   }
   
   .lang-list {
@@ -781,7 +776,7 @@ textarea[name=userMessage] {
   .lang-list-2 {
     margin: 0 0.75rem;
   }
-  
+
   .footer {
     height: 52.875rem;
   }
@@ -882,6 +877,7 @@ textarea[name=userMessage] {
   }
 
   .skills {
+    width: 38rem;
     height: 29.009375rem;
     margin: 24px 0;
   }
@@ -895,7 +891,7 @@ textarea[name=userMessage] {
   .skill-1,
   .skill-2,
   .skill-3 {
-    width: 36.375rem;
+    width: 32.375rem;
   }
   
   .lang-lists {
