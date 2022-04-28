@@ -626,7 +626,6 @@ textarea[name=userMessage] {
   }
 
   .work-details {
-    border: 2px solid green;
     display: flex;
     flex-direction: column;
     padding: 24px;
@@ -640,7 +639,6 @@ textarea[name=userMessage] {
   }
 
   .about-page {
-    border: 2px solid red;
     display: flex;
     border-top-right-radius: 70px;
     padding: 8.875rem;
@@ -648,37 +646,41 @@ textarea[name=userMessage] {
   }
 
   .abt-box {
-    border: 2px solid green;
     width: 27.9375rem;
     margin-right: 1.5625rem;
   }
-  
-  .abt {
-    height: 6.3125rem;
-    font-family: var(--pry-font-family);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 3.25rem;
-    color: var(--sec-color);
-    margin: 12px 0;
+
+  .skills {
+    height: 29.009375rem;
+    margin: 24px 0;
   }
   
-  .abt-me-page {
-    height: 9rem;
-    font-family: var(--pry-font-family);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: var(--tertiary-color);
+  .skill {
+    border-bottom: 1px solid #dfe1e6;
+    height: 4.5rem;
+    padding: 1.5rem 0.75rem;
   }
   
-  .lc-abt {
-    margin: 12px 0;
+  .skill-1,
+  .skill-2,
+  .skill-3 {
+    width: 36.375rem;
   }
   
-  .resume-btn {
-    width: 10.125rem;
+  .lang-lists {
+    display: flex;
+    width: 25.875rem;
+    padding: 0.75rem;
+  }
+  
+  .lang-list {
+    display: flex;
+    flex-direction: column;
+    width: 7.625rem;
+    height: 7.5rem;
+  }
+  
+  .lang-list-2 {
+    margin: 0 0.75rem;
   }
 }
