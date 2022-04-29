@@ -631,7 +631,19 @@ textarea[name=userMessage] {
     margin-right: 1.375rem;
   }
   
-  /* Add Transition here */
+  /* --Transition-- */
+
+  .image img {
+    transition-property: width;
+    transition-duration: 4s;
+    transition-delay: 2s;
+  }
+
+  .image img:hover {
+    width: 80%;
+  }
+
+   /* --Transition-- */
 
   .work-details {
     display: flex;
