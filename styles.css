@@ -553,6 +553,33 @@ textarea[name=userMessage] {
     align-items: center;
   }
 
+  .dv-logo {
+    margin-top: 0;
+    animation-duration: 3s;
+    animation-name: rotation;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(2deg);
+      color: #ee45ff;
+      font-size: 6rem;
+    }
+
+    50% {
+      transform: rotate(180deg);
+      color: #f00;
+      font-size: 3rem;
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
   nav ul {
     display: flex;
     justify-content: space-between;
