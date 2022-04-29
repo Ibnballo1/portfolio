@@ -630,6 +630,8 @@ textarea[name=userMessage] {
     height: 28rem;
     margin-right: 1.375rem;
   }
+  
+  /* Add Transition here */
 
   .work-details {
     display: flex;
