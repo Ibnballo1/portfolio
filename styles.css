@@ -579,7 +579,6 @@ textarea[name=userMessage] {
     }
   }
 
-
   nav ul {
     display: flex;
     justify-content: space-between;
@@ -630,7 +629,7 @@ textarea[name=userMessage] {
     height: 28rem;
     margin-right: 1.375rem;
   }
-  
+
   /* --Transition-- */
 
   .image img {
@@ -643,7 +642,7 @@ textarea[name=userMessage] {
     width: 80%;
   }
 
-   /* --Transition-- */
+    /* --Transition-- */
 
   .work-details {
     display: flex;
