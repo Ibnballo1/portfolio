@@ -68,7 +68,7 @@ a {
 }
 
 .img-container {
-  background-image: url('./Images/header-shapes-mobile.png');
+  background-image: url('Images/header-shapes-mobile.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -445,7 +445,7 @@ footer {
 
 .footer-bg-img {
   height: 47.1rem;
-  background-image: url('./Images/contact-form-bgimg.png');
+  background-image: url('Images/contact-form-bgimg.png');
   background-repeat: no-repeat;
   background-position: right;
   position: absolute;
@@ -604,7 +604,7 @@ textarea[name=userMessage] {
   }
 
   .img-container {
-    background-image: url('./Images/header-shapes\ mobile.png');
+    background-image: url('Images/header-shapes\ mobile.png');
     background-repeat: no-repeat;
     background-position: unset;
     background-size: cover;
@@ -718,7 +718,7 @@ textarea[name=userMessage] {
 
 @media only screen and (min-width: 1024px) {
   .img-container {
-    background-image: url('./Images/desktop-bgimg.png');
+    background-image: url('Images/desktop-bgimg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -824,7 +824,7 @@ textarea[name=userMessage] {
 
   .footer-bg-img {
     height: 44.91875rem;
-    background-image: url('./Images/footer-desktop-bgimg.png');
+    background-image: url('Images/footer-desktop-bgimg.png');
     background-position: center;
     background-size: cover;
     margin-top: 4.943125rem;
@@ -848,7 +848,7 @@ textarea[name=userMessage] {
 
 @media only screen and (min-width: 1440px) {
   .img-container {
-    background-image: url('./Images/desktop-bgimg.png');
+    background-image: url('Images/desktop-bgimg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -960,7 +960,7 @@ textarea[name=userMessage] {
 
   .footer-bg-img {
     height: 44.91875rem;
-    background-image: url('./Images/footer-desktop-bgimg.png');
+    background-image: url('Images/footer-desktop-bgimg.png');
     background-position: center;
     background-size: cover;
     margin-top: 4.943125rem;
