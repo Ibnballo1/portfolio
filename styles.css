@@ -68,7 +68,7 @@ a {
 }
 
 .img-container {
-  background-image: url('./images/header-shapes-mobile.png');
+  background-image: url('/images/header-shapes-mobile.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
