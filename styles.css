@@ -68,15 +68,15 @@ a {
 }
 
 .img-container {
+  height: 93vh;
   background-image: url('images/header-shapes-mobile.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: absolute;
-  left: 0;
   right: 0;
+  left: 0;
   margin-top: 0.45rem;
-  height: 93vh;
 }
 
 .about-container {
@@ -85,6 +85,7 @@ a {
   justify-content: center;
   padding: 1.5rem;
   height: 98.1vh;
+  z-index: 1;
 }
 
 .name {
@@ -455,6 +456,7 @@ footer {
 .contact-details {
   text-align: center;
   margin-top: 6.4375rem;
+  z-index: 1;
 }
 
 .contact-me {
@@ -480,6 +482,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 2.8125rem 1.5rem;
+  z-index: 1;
 }
 
 .contact-form input {
