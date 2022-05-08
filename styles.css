@@ -400,7 +400,6 @@ a {
 .lang-list {
   display: flex;
   align-items: center;
-  /*width: 18.9375rem;*/
   height: 4.17rem;
   background-color: #f7f7f9;
   padding: 0.5625rem 0 0.6075rem 0.75rem;
@@ -409,7 +408,7 @@ a {
 .lang-list-2 {
   margin: 12px 0;
 }
-/*
+
 .lang-list-img {
   width: 3rem;
   height: 3rem;
@@ -484,7 +483,7 @@ footer {
 }
 
 .contact-form input {
-  width: 20.4375rem;
+  width: 17rem;
   height: 3rem;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
@@ -492,7 +491,7 @@ footer {
   padding: 0.9375rem 2.375rem 0.9375rem 1rem;
   margin-bottom: 1.25rem;
 }
-
+/*
 input[type=text],
 input[type=email] {
   font-family: var(--pry-font-family);
