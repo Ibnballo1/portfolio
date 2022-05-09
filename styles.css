@@ -43,6 +43,10 @@ body {
   text-align: center;
 }
 
+.fa-close {
+  display: none;
+}
+
 .nav-menu .fas {
   align-self: center;
 }
