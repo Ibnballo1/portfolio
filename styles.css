@@ -105,7 +105,6 @@ header {
   filter: blur(6px);
 }
 
-
 .about-me {
   display: flex;
   flex-direction: column;
@@ -692,24 +691,6 @@ textarea[name=userMessage] {
     filter: none;
   }
 
-  /*nav ul {
-    display: flex;
-    justify-content: space-between;
-    width: 16.1875rem;
-  }
-
-  nav ul li a {
-    font-family: var(--pry-font-family);
-    font-weight: 500;
-    font-size: 0.9375rem;
-    line-height: 1.25rem;
-    color: #344563;
-  }
-
-  nav .fas {
-    display: none;
-  }
-*/
   .about-me {
     padding-right: 0.5rem;
     padding-left: 2.1625rem;
