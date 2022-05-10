@@ -90,6 +90,7 @@ header {
   font-size: 32px;
   line-height: 44px;
   padding: 106px 0 0 28px;
+  z-index: 100;
 }
 
 .dv-ls-nav {
