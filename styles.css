@@ -21,47 +21,90 @@ body {
   background: var(--pry-bgcolor);
 }
 
-.headers {
-  background-color: var(--sec-bgcolor);
+.hide-scroll {
+  overflow-y: hidden;
+}
+
+header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 3.625rem 1.8rem 0.875rem 1.5rem;
+  background-color: #fff;
+}
+
+.icon-menu {
+  position: absolute;
+  left: 0;
+  background-color: #6070ff;
+  opacity: 0.8;
+  width: 99.8%;
+  height: 99.9%;
+  overflow-y: hidden;
+}
+
+.dv-nav {
+  display: none;
 }
 
 .mylogo {
-  font-family: var(--pry-font-family);
-  font-style: var(--pry-font-style);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.25rem;
+  color: #6070ff;
+  line-height: 20px;
+  letter-spacing: 0;
+  margin: 58px 0 26px 24px;
 }
 
-.mylogo,
-.nav-menu .fas {
-  color: var(--pry-color);
-  text-align: center;
+.vectors {
+  cursor: pointer;
+  color: #6070ff;
+  width: 18px;
+  height: 12px;
+  margin: 62px 35px 36px 35px;
 }
 
-.fa-close {
+.close {
+  cursor: pointer;
   display: none;
+  position: absolute;
+  top: 51px;
+  right: 45px;
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  width: 12px;
+  height: 12px;
 }
 
-.nav-menu .fas {
-  align-self: center;
+.js-nav-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 106px 0 0 28px;
 }
 
-ul {
-  list-style-type: none;
+.dv-ls-nav {
+  margin-bottom: 38px;
 }
 
-nav ul {
-  display: none;
-}
-
-a {
+.dv-ls-nav a {
   text-decoration: none;
+  color: #fff;
 }
+
+.blurring {
+  filter: blur(6px);
+}
+
 
 .about-me {
   display: flex;
@@ -553,10 +596,26 @@ textarea[name=userMessage] {
 
 /* Desktop Version */
 @media only screen and (min-width: 768px) {
+  .hide-scroll {
+    overflow-y: scroll;
+  }
+
   .headers {
     margin-top: 0.0625rem;
     padding-top: 0.9375rem;
     align-items: center;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  .vectors {
+    display: none;
+    cursor: none;
+    width: 0;
+    height: 0;
+    margin: 0;
   }
 
   .dv-logo {
@@ -585,7 +644,55 @@ textarea[name=userMessage] {
     }
   }
 
-  nav ul {
+  #menuBarImg {
+    display: none !important;
+  }
+
+  .close {
+    display: none;
+    cursor: none;
+    top: 0;
+    right: 0;
+    margin: 0;
+    color: #fff;
+    font-weight: normal;
+    font-size: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .dv-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 259px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    padding: 10px 12px;
+  }
+
+  .js-nav-list {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+  }
+
+  .dv-ls-nav a {
+    text-decoration: none;
+    color: #2638dc;
+  }
+
+  .blurring {
+    filter: none;
+  }
+
+  /*nav ul {
     display: flex;
     justify-content: space-between;
     width: 16.1875rem;
@@ -602,7 +709,7 @@ textarea[name=userMessage] {
   nav .fas {
     display: none;
   }
-
+*/
   .about-me {
     padding-right: 0.5rem;
     padding-left: 2.1625rem;
