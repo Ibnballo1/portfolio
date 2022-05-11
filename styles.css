@@ -614,28 +614,35 @@ textarea[name=userMessage] {
   background-color: #fff;
 }
 
+.modal-title-times {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
 .modal-title {
-  font-size: 30px;
-  line-height: 44px;
-  margin: 14px 0 0 14px;
+  font-family: var(--pry-font-family);
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 2.75rem;
+  /*margin: 0.875rem 0 0 0.875rem;*/
+  color: #172b4d;
 }
 
 .cls-btn {
   cursor: pointer;
-  position: absolute;
+  /*position: absolute;
   top: 6%;
-  right: 12%;
-  font-weight: normal;
-  font-size: 14px;
+  right: 12%;*/
+  color: #67798e;
+  font-weight: 700;
+  font-size: 1.75rem;
 }
 
 .modal-year {
   display: flex;
   margin: 0 0 0 18px;
-}
-
-.mod-yr {
-  font-size: 12px;
 }
 
 .modal-img {
@@ -646,7 +653,7 @@ textarea[name=userMessage] {
 }
 
 .modal-text {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--pry-font-family);
   font-weight: 300;
   font-size: 14px;
   line-height: 22px;
@@ -656,62 +663,23 @@ textarea[name=userMessage] {
 }
 
 .modal-tags {
-  margin: auto 12px 14px 12px;
+  margin: 0 0 20px 12px;
 }
 
-.all-tags {
-  font-size: 11px;
-  line-height: 10px;
+.modal-tags a {
+  font-family: var(--pry-font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #6070ff;
 }
 
-.divider {
-  margin: auto 0;
-}
-
-.divider hr {
-  height: 0;
-  position: absolute;
-  left: 6%;
-  right: 4%;
-  top: 86.5%;
+.deskt-techs hr {
   border: 1px solid #ebecf0;
+  margin: 0 auto;
+  width: 90%;
 }
 
-.modal-button {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 18px;
-}
-
-#live-btn,
-#src-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 130px;
-  height: 42px;
-}
-
-#live-btn span,
-#src-btn span {
-  flex: none;
-  text-align: left;
-}
-
-.see-live-icon,
-.see-src-icon {
-  position: absolute;
-  left: 33%;
-}
-
-.see-src-icon {
-  left: 83%;
-}
-
-#src-btn {
-  justify-content: flex-start;
-  width: 148px;
-}
 
 
 /* Desktop Version */
