@@ -31,6 +31,10 @@ header {
   background-color: #fff;
 }
 
+a {
+  text-decoration: none;
+}
+
 .icon-menu {
   position: absolute;
   left: 0;
@@ -319,23 +323,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 12px;
   height: 1.5rem;
 }
 
-.tag-1 {
-  width: 3.3125rem;
-  border-radius: 8px;
-  background-color: #ebebff;
-}
-
-.tag-2 {
-  width: 2.8125rem;
-  border-radius: 8px;
-  background-color: #ebebff;
-}
-
-.tag-3 {
-  width: 5.5625rem;
+.tag-1,
+.tag-2,
+.tag-3,
+.tag-4 {
   border-radius: 8px;
   background-color: #ebebff;
 }
