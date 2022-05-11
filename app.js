@@ -73,7 +73,7 @@ data.forEach((works) => {
 
   let listOfTechs = '';
   techs.forEach((tech) => {
-    listOfTechs += `<li class='tag-${counter + 1}'><a href="#" class="tag-link">${tech}</a></li>`
+    listOfTechs += `<li class='tag-${counter + 1}'><a href="#" class="tag-link">${tech}</a></li>`;
   });
 
   const cardHTML = `
