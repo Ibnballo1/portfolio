@@ -626,15 +626,11 @@ textarea[name=userMessage] {
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 2.75rem;
-  /*margin: 0.875rem 0 0 0.875rem;*/
   color: #172b4d;
 }
 
 .cls-btn {
   cursor: pointer;
-  /*position: absolute;
-  top: 6%;
-  right: 12%;*/
   color: #67798e;
   font-weight: 700;
   font-size: 1.75rem;
