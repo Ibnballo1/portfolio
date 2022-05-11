@@ -73,31 +73,8 @@ data.forEach((works) => {
 
   let listOfTechs = '';
   techs.forEach((tech) => {
-    listOfTechs += `<li class="tag-${counter + 1}"><a href="#" class="tag-link">${tech}</a></li>`
+    listOfTechs += `<li class='tag-${counter + 1}'><a href="#" class="tag-link">${tech}</a></li>`
   });
-
-  /*const cardHTML = `
-  <div class="work-card-${counter + 1}">
-  <div class="snapshot-portfolio-${counter + 1}"></div>
-  <div class="project-title">
-    <h2>${title}</h2>
-    <div class="frame dv-frame">
-      <p class="texts text-1">CANOPY</p>
-      <p class="count"></p>
-      <p class="texts text-2">Back End Dev</p>
-      <p class="count"></p>
-      <p class="texts text-3">2015</p>
-    </div>
-    <p class="pry-text">${description}</p>
-    <ul class="tags">${listOfTechs}</ul>
-    <div class="action-btn">
-      <button type="button" class="btn btn-work" data-works="${counter}">
-        <span>See Project</span>
-      </button>
-    </div>
-  </div>
-</div>
-  `;*/
 
   const cardHTML = `
   <div class="works work${counter + 1}">
@@ -121,7 +98,7 @@ data.forEach((works) => {
                     <ul class="tags">
                         ${listOfTechs}
                     </ul>
-                    <button type="submit" class="project-btn" data-works = "${counter}">
+                    <button type="submit" class="project-btn btn-work" data-works = "${counter}">
                             See Project
                     </button>
                 </div>
@@ -145,7 +122,7 @@ popupButtons.forEach((popBtn) => {
 
     let listOfTechs = '';
     techs.forEach((tech) => {
-      listOfTechs += `<li><a href="#" class="tags-link html-tag">${tech}</a></li>`;
+      listOfTechs += `<li class='tag-${counter + 1}'><a href="#" class="tags-link html-tag">${tech}</a></li>`;
     });
 
     const modalPopup = `
