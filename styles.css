@@ -680,7 +680,34 @@ textarea[name=userMessage] {
   width: 90%;
 }
 
+.modal-button {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
 
+#live-btn,
+#src-btn {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 22px;
+  height: 42px;
+  background-color: #fff;
+}
+
+#live-btn span,
+#src-btn span {
+  font-family: var(--pry-font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #396df2;
+  text-align: left;
+  margin-right: 8px;
+}
 
 /* Desktop Version */
 @media only screen and (min-width: 768px) {
