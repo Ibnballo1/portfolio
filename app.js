@@ -205,3 +205,39 @@ form.addEventListener('submit', (e) => {
 // Local Storage Session
 const userInput = document.getElementById('username');
 const msgInput = document.getElementById('msg');
+
+// Checking if data are in local storage and getting them
+function getDatas() {
+  if (localStorage.getItem('formField') !== null) {
+    const formInput = JSON.parse(localStorage.getItem('formField'));
+    userInput.value = formInput[userInput.name];
+    mailValue.value = formInput[mailValue.name];
+    msgInput.value = formInput[msgInput.name];
+  }
+}
+
+getDatas();
+
+const formField = {
+  username: userInput.value,
+  useremail: mailValue.value,
+  msg: msgInput.value,
+};
+
+// set the inputs
+function setInputs(formDetails) {
+  formField[formDetails.name] = formDetails.value;
+  localStorage.setItem('formField', JSON.stringify(formField));
+}
+
+userInput.addEventListener('input', () => {
+  setInputs(userInput);
+});
+
+mailValue.addEventListener('input', () => {
+  setInputs(mailValue);
+});
+
+msgInput.addEventListener('input', () => {
+  setInputs(msgInput);
+});
