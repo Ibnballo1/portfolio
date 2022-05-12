@@ -201,3 +201,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   errorMessage.innerText = showMessage;
 });
+
+// Local Storage Session
+const userInput = document.getElementById('username');
+const msgInput = document.getElementById('msg');
