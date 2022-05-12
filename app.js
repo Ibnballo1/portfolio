@@ -185,7 +185,7 @@ popupButtons.forEach((popBtn) => {
 
 const form = document.getElementById('form');
 const mailValue = document.getElementById('useremail');
-const errorMessage = document.getElementById('errElement');
+const errorMessage = document.getElementById('errMessage');
 
 form.addEventListener('submit', (e) => {
   const showMessage = [];
