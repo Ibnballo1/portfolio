@@ -920,6 +920,65 @@ textarea[name=userMessage] {
   #form-button {
     margin: 0 auto;
   }
+
+/*Desktop modal*/
+
+  .modal-content {
+    width: 80vw;
+  }
+
+  .modal-title {
+    font-size: 42px;
+    line-height: 44px;
+    margin: 14px 0 0 14px;
+  }
+
+  .modal-img-1 {
+    width: 70vw;
+    height: 60vh;
+  }
+
+  .desk-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8px;
+    padding: 0 12px;
+  }
+
+  .modal-text-container {
+    width: 50%;
+  }
+
+  .modal-button {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #live-btn,
+  #src-btn {
+    padding: 6px 11px;
+  }
+
+  #live-btn {
+    width: 49%;
+  }
+
+  #src-btn {
+    width: 50%;
+  }
+
+  #live-btn span,
+  #src-btn span {
+    font-size: 12px;
+    margin-right: 1px;
+  }
+
+  .see-live-icon,
+  .see-src-icon {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {

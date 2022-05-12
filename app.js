@@ -142,9 +142,11 @@ popupButtons.forEach((popBtn) => {
             <img src="${linkImg}" class="modal-img-1" alt="card-image-1" >
           </div>
           <div class="desk-description">
-            <p class="modal-text">
-              ${description}
-            </p>
+            <div class="modal-text-container">
+              <p class="modal-text">
+                ${description}
+              </p>
+            </div>
             <div class="deskt-techs">
               <ul class="tags modal-tags">
                 ${listOfTechs}
