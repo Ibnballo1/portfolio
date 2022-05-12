@@ -565,6 +565,21 @@ textarea[name=userMessage] {
   color: #b3bac5;
 }
 
+#errElement {
+  display: none;
+  color: yellowgreen;
+  background-color: #000;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 12px;
+  font-family: var(--pry-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+
 #form-button {
   width: 8.75rem;
   height: 3rem;
