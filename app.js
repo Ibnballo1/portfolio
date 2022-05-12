@@ -180,3 +180,24 @@ popupButtons.forEach((popBtn) => {
     });
   });
 });
+
+// Validating form section
+
+const form = document.getElementById('form');
+const mailValue = document.getElementById('useremail');
+const errorMessage = document.getElementById('errElement');
+
+form.addEventListener('submit', (e) => {
+  const showMessage = [];
+  if (mailValue.value.toLowerCase() !== mailValue.value) {
+    errorMessage.style.display = 'inline-block';
+    showMessage.push(`
+    Error: Email should be in lowercase,
+    you entered ${mailValue.value}
+    `);
+  } else {
+    form.submit();
+  }
+  e.preventDefault();
+  errorMessage.innerText = showMessage;
+});

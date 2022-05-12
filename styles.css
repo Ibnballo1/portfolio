@@ -482,7 +482,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 48.7rem;
   background-color: var(--pry-color);
   border-top-left-radius: 70px;
   padding: 0 1.5rem;
