@@ -404,8 +404,11 @@ a {
 }
 
 .skills {
-  height: 29.009375rem;
   margin: 24px 0;
+}
+
+.skill-item {
+  list-style: none;
 }
 
 .skill {
@@ -450,7 +453,8 @@ a {
   padding: 0.5625rem 0 0.6075rem 0.75rem;
 }
 
-.lang-list-2 {
+.lang-list-2,
+.lang-list-4 {
   margin: 12px 0;
 }
 
@@ -914,7 +918,8 @@ textarea[name=userMessage] {
     height: 7.5rem;
   }
 
-  .lang-list-2 {
+  .lang-list-2,
+  .lang-list-4 {
     margin: 0 0.75rem;
   }
 
