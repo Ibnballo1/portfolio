@@ -954,8 +954,9 @@ textarea[name=userMessage] {
   }
 
   .modal-img-1 {
-    width: 70vw;
-    height: 60vh;
+    /* width: 70vw;
+    height: 60vh; */
+    width: 100% !important;
   }
 
   .desk-description {

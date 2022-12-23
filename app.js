@@ -44,27 +44,38 @@ const data = [
       will be held in Korea in October.",
     linkImg: "images/snapshot1.png",
     techs: ["Html", "CSS", "Javascript"],
+    liveLink: "https://bit.ly/wt-universal-bootcamp",
+    githubLink: "https://github.com/Ibnballo1/Capstone-Project-1",
   },
   {
-    title: "Multi-Post Stories",
+    title: "Todo List App",
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "This is a To-Do-List App built with HTML5, CSS, and JavaScript. \
+      This app enables a user to add, edit, update and remove task(s). \
+      This app also integrated the use of webpack and other dependencies.",
     linkImg: "images/snapshot2.png",
-    techs: ["Html", "CSS", "Javascript"],
+    techs: ["Html", "CSS", "Javascript", "Webpack"],
+    liveLink: "https://bit.ly/JS-ToDoApp",
+    githubLink: "https://github.com/Ibnballo1/ToDo-List-App",
   },
   {
-    title: "Tonic",
+    title: "Leaderboard API",
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "The leaderboard website displays scores submitted by different players. \
+      It also allows you to submit your score.",
     linkImg: "images/snapshot3.png",
-    techs: ["Html", "CSS", "Javascript"],
+    techs: ["Html", "CSS", "Javascript", "Webpack"],
+    liveLink: "https://bit.ly/LeaderBoardAPI",
+    githubLink: "https://github.com/Ibnballo1/LeaderBoard-API-App",
   },
   {
-    title: "Multi-Post Stories",
+    title: "Cloud Site",
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     linkImg: "images/snapshot4.png",
-    techs: ["Html", "CSS", "Javascript"],
+    techs: ["Html", "CSS"],
+    liveLink: "https://bit.ly/Cloud-Site",
+    githubLink: "https://github.com/Ibnballo1/CloudSite",
   },
 ];
 
@@ -123,7 +134,7 @@ popupButtons.forEach((popBtn) => {
   popBtn.addEventListener('click', () => {
     const btnWorkIndex = popBtn.dataset.works;
     const {
-      title, description, techs, linkImg,
+      title, description, techs, linkImg, liveLink, githubLink,
     } = data[btnWorkIndex];
 
     let listOfTechs = '';
@@ -159,12 +170,12 @@ popupButtons.forEach((popBtn) => {
               </ul>
               <hr />
               <div class="modal-button">
-                <button id="live-btn" type="button" class="btn">
+                <a href="${liveLink}" target= "_blank" id="live-btn" type="button" class="btn">
                   <span>See live</span> <img src="images/btn-icon.svg" class="see-live-icon" alt="button live icon" />
-                </button>
-                <button id="src-btn" type="button" class="btn">
+                </a>
+                <a href="${githubLink}" id="src-btn" type="button" class="btn">
                   <span>See Source</span> <img src="images/btn-github.png" class="see-src-icon" alt="button github icon" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
