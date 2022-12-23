@@ -304,7 +304,6 @@ a {
 }
 
 .primary-text {
-  height: 76px;
   font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 400;

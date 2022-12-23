@@ -37,28 +37,34 @@ menuBar.addEventListener('click', () => {
 
 const data = [
   {
-    title: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    linkImg: 'images/snapshot1.png',
-    techs: ['Html', 'CSS', 'Javascript'],
+    title: "WT BOOTCAMP 2022",
+    description:
+      "A fun festival where people from more than 80 countries who believe in the value of \
+      sharing and openness and create positive change gather and share their thoughts\
+      will be held in Korea in October.",
+    linkImg: "images/snapshot1.png",
+    techs: ["Html", "CSS", "Javascript"],
   },
   {
-    title: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    linkImg: 'images/snapshot2.png',
-    techs: ['Html', 'CSS', 'Javascript'],
+    title: "Multi-Post Stories",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    linkImg: "images/snapshot2.png",
+    techs: ["Html", "CSS", "Javascript"],
   },
   {
-    title: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    linkImg: 'images/snapshot3.png',
-    techs: ['Html', 'CSS', 'Javascript'],
+    title: "Tonic",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    linkImg: "images/snapshot3.png",
+    techs: ["Html", "CSS", "Javascript"],
   },
   {
-    title: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    linkImg: 'images/snapshot4.png',
-    techs: ['Html', 'CSS', 'Javascript'],
+    title: "Multi-Post Stories",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    linkImg: "images/snapshot4.png",
+    techs: ["Html", "CSS", "Javascript"],
   },
 ];
 
