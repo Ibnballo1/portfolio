@@ -37,45 +37,45 @@ menuBar.addEventListener('click', () => {
 
 const data = [
   {
-    title: "WT BOOTCAMP 2022",
+    title: 'WT BOOTCAMP 2022',
     description:
-      "A fun festival where people from more than 80 countries who believe in the value of \
-      sharing and openness and create positive change gather and share their thoughts\
-      will be held in Korea in October.",
-    linkImg: "images/snapshot1.png",
-    techs: ["Html", "CSS", "Javascript"],
-    liveLink: "https://bit.ly/wt-universal-bootcamp",
-    githubLink: "https://github.com/Ibnballo1/Capstone-Project-1",
+      `A fun festival where people from more than 80 countries who believe in the value of
+      sharing and openness and create positive change gather and share their thoughts
+      will be held in Korea in October.`,
+    linkImg: 'images/snapshot1.png',
+    techs: ['Html', 'CSS', 'Javascript'],
+    liveLink: 'https://bit.ly/wt-universal-bootcamp',
+    githubLink: 'https://github.com/Ibnballo1/Capstone-Project-1',
   },
   {
-    title: "Todo List App",
+    title: 'Todo List App',
     description:
-      "This is a To-Do-List App built with HTML5, CSS, and JavaScript. \
-      This app enables a user to add, edit, update and remove task(s). \
-      This app also integrated the use of webpack and other dependencies.",
-    linkImg: "images/snapshot2.png",
-    techs: ["Html", "CSS", "Javascript", "Webpack"],
-    liveLink: "https://bit.ly/JS-ToDoApp",
-    githubLink: "https://github.com/Ibnballo1/ToDo-List-App",
+      `This is a To-Do-List App built with HTML5, CSS, and JavaScript.
+      This app enables a user to add, edit, update and remove task(s).
+      This app also integrated the use of webpack and other dependencies.`,
+    linkImg: 'images/snapshot2.png',
+    techs: ['Html', 'CSS', 'Javascript', 'Webpack'],
+    liveLink: 'https://bit.ly/JS-ToDoApp',
+    githubLink: 'https://github.com/Ibnballo1/ToDo-List-App',
   },
   {
-    title: "Leaderboard API",
+    title: 'Leaderboard API',
     description:
-      "The leaderboard website displays scores submitted by different players. \
-      It also allows you to submit your score.",
-    linkImg: "images/snapshot3.png",
-    techs: ["Html", "CSS", "Javascript", "Webpack"],
-    liveLink: "https://bit.ly/LeaderBoardAPI",
-    githubLink: "https://github.com/Ibnballo1/LeaderBoard-API-App",
+      `The leaderboard website displays scores submitted by different players.
+      It also allows you to submit your score.`,
+    linkImg: 'images/snapshot3.png',
+    techs: ['Html', 'CSS', 'Javascript', 'Webpack'],
+    liveLink: 'https://bit.ly/LeaderBoardAPI',
+    githubLink: 'https://github.com/Ibnballo1/LeaderBoard-API-App',
   },
   {
-    title: "Cloud Site",
+    title: 'Cloud Site',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    linkImg: "images/snapshot4.png",
-    techs: ["Html", "CSS"],
-    liveLink: "https://bit.ly/Cloud-Site",
-    githubLink: "https://github.com/Ibnballo1/CloudSite",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    linkImg: 'images/snapshot4.png',
+    techs: ['Html', 'CSS'],
+    liveLink: 'https://bit.ly/Cloud-Site',
+    githubLink: 'https://github.com/Ibnballo1/CloudSite',
   },
 ];
 
