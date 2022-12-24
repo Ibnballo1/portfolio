@@ -7,6 +7,7 @@ const closeBar = document.getElementById('close_bar');
 const lists = document.getElementById('menu_list');
 const hiddenScrol = document.getElementById('hideOverflow');
 const blurEffect = document.querySelectorAll('.toblur');
+const overflowWorkSection = document.getElementById('worksections');
 let isDisplay = true;
 
 menuBar.addEventListener('click', () => {
@@ -37,50 +38,60 @@ menuBar.addEventListener('click', () => {
 
 const data = [
   {
-    title: 'WT BOOTCAMP 2022',
-    description:
-      `A fun festival where people from more than 80 countries who believe in the value of
+    title: "Math Web App",
+    description: `This is a website for calculating basic mathematics.
+    The website is built with ReactJS and it is a full SPA (Single Page Application) website.
+    It has 3 sections, the home, the calculator page, and the quote page.`,
+    linkImg: "images/snapshot5.png",
+    techs: ["Html", "CSS", "Javascript", "React"],
+    liveLink: "https://bit.ly/ibn-calculator",
+    githubLink: "https://github.com/Ibnballo1/Math-App",
+  },
+  {
+    title: "WT BOOTCAMP 2022",
+    description: `A fun festival where people from more than 80 countries who believe in the value of
       sharing and openness and create positive change gather and share their thoughts
       will be held in Korea in October.`,
-    linkImg: 'images/snapshot1.png',
-    techs: ['Html', 'CSS', 'Javascript'],
-    liveLink: 'https://bit.ly/wt-universal-bootcamp',
-    githubLink: 'https://github.com/Ibnballo1/Capstone-Project-1',
+    linkImg: "images/snapshot1.png",
+    techs: ["Html", "CSS", "Javascript"],
+    liveLink: "https://bit.ly/wt-universal-bootcamp",
+    githubLink: "https://github.com/Ibnballo1/Capstone-Project-1",
   },
   {
-    title: 'Todo List App',
-    description:
-      `This is a To-Do-List App built with HTML5, CSS, and JavaScript.
+    title: "Todo List App",
+    description: `This is a To-Do-List App built with HTML5, CSS, and JavaScript.
       This app enables a user to add, edit, update and remove task(s).
       This app also integrated the use of webpack and other dependencies.`,
-    linkImg: 'images/snapshot2.png',
-    techs: ['Html', 'CSS', 'Javascript', 'Webpack'],
-    liveLink: 'https://bit.ly/JS-ToDoApp',
-    githubLink: 'https://github.com/Ibnballo1/ToDo-List-App',
+    linkImg: "images/snapshot2.png",
+    techs: ["Html", "CSS", "Javascript", "Webpack"],
+    liveLink: "https://bit.ly/JS-ToDoApp",
+    githubLink: "https://github.com/Ibnballo1/ToDo-List-App",
   },
   {
-    title: 'Leaderboard API',
-    description:
-      `The leaderboard website displays scores submitted by different players.
+    title: "Leaderboard API",
+    description: `The leaderboard website displays scores submitted by different players.
       It also allows you to submit your score.`,
-    linkImg: 'images/snapshot3.png',
-    techs: ['Html', 'CSS', 'Javascript', 'Webpack'],
-    liveLink: 'https://bit.ly/LeaderBoardAPI',
-    githubLink: 'https://github.com/Ibnballo1/LeaderBoard-API-App',
+    linkImg: "images/snapshot3.png",
+    techs: ["Html", "CSS", "Javascript", "Webpack"],
+    liveLink: "https://bit.ly/LeaderBoardAPI",
+    githubLink: "https://github.com/Ibnballo1/LeaderBoard-API-App",
   },
   {
-    title: 'Cloud Site',
+    title: "Cloud Site",
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    linkImg: 'images/snapshot4.png',
-    techs: ['Html', 'CSS'],
-    liveLink: 'https://bit.ly/Cloud-Site',
-    githubLink: 'https://github.com/Ibnballo1/CloudSite',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    linkImg: "images/snapshot4.png",
+    techs: ["Html", "CSS"],
+    liveLink: "https://bit.ly/Cloud-Site",
+    githubLink: "https://github.com/Ibnballo1/CloudSite",
   },
 ];
 
 // Creating the worksection dynamically
 const workSection = document.querySelector('.work-section');
+if (data.length > 4) {
+  workSection.classList.add("overflow-work-section");
+}
 let counter = 0;
 
 data.forEach((works) => {
