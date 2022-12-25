@@ -222,12 +222,6 @@ a {
   padding: 7.125rem 1.5rem;
 }
 
-.overflow-work-section {
-  border: 2px solid red;
-  /* height: 250px; */
-  overflow-y: scroll;
-}
-
 .work-section .works {
   display: flex;
   flex-direction: column;
@@ -237,13 +231,11 @@ a {
   padding: 1rem;
 }
 
-.work1,
-.work3 {
+.works:nth-child(odd) {
   height: 34.5rem;
 }
 
-.work2,
-.work4 {
+.works:nth-child(even) {
   height: 37.25rem;
 }
 
@@ -960,9 +952,8 @@ textarea[name=userMessage] {
   }
 
   .modal-img-1 {
-    /* width: 70vw;
-    height: 60vh; */
-    width: 100% !important;
+    width: 70vw;
+    height: 60vh;
   }
 
   .desk-description {
