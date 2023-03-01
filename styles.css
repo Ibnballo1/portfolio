@@ -43,7 +43,6 @@ a {
   width: 99.8%;
   height: 99.9%;
   overflow-y: hidden;
-  border: 2px solid red;
   transition: all 0.6s linear;
 }
 
