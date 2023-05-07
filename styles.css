@@ -204,16 +204,6 @@ a {
   padding: 1rem;
 }
 
-.works:nth-child(odd) {
-  /* height: 34.5rem; */
-  /* border: 2px solid red; */
-}
-
-.works:nth-child(even) {
-  /* height: 37.25rem; */
-  /* border: 2px solid purple; */
-}
-
 .image-div {
   border: 2px solid blue;
 }
@@ -801,10 +791,9 @@ textarea[name=userMessage] {
   }
 
   .img-container {
-    background-image: url('images/header-shapes-mobile.png');
-    background-repeat: no-repeat;
+    background-image: url('images/desktop-bgimg.png');
     background-position: unset;
-    background-size: cover;
+    background-size: contain;
   }
 
   .work-section {
