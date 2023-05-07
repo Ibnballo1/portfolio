@@ -103,8 +103,8 @@ data.forEach((works) => {
 
   const cardHTML = `
   <div class="works work${counter + 1}">
-                <div class="image${counter + 1} project-img">
-                  
+                <div class="image-div">
+                  <img src=${linkImg} alt='project screenshot' class='project-img' />
                 </div>
                 <div class="work-details">
                     <h2 class="project-title">
@@ -131,7 +131,7 @@ data.forEach((works) => {
   `;
 
   workSection.insertAdjacentHTML('beforeend', cardHTML);
-  document.querySelector(`.image${counter + 1}`).style.backgroundImage = `url("${linkImg}")`;
+  // document.querySelector(`.image${counter + 1}`).style.backgroundImage = `url("${linkImg}")`;
   // Set background image dynamically
   counter += 1;
 });
