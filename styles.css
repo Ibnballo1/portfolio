@@ -18,6 +18,7 @@
 }
 
 body {
+  font-family: var(--pry-font-family);
   background: var(--pry-bgcolor);
 }
 
@@ -146,7 +147,6 @@ a {
 }
 
 .name h1 {
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -155,7 +155,6 @@ a {
 
 .name .abt-me {
   color: var(--tertiary-color);
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -164,7 +163,6 @@ a {
 
 .letsconnect {
   margin: 0;
-  font-family: var(--pry-font-family);
   font-style: var(--pry-font-style);
   font-weight: 500;
   font-size: 1rem;
@@ -218,7 +216,6 @@ a {
 }
 
 .project-title {
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
@@ -235,7 +232,6 @@ a {
 }
 
 .items {
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 600;
   font-size: 0.8125rem;
@@ -260,7 +256,6 @@ a {
 }
 
 .primary-text {
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 0.9375rem;
@@ -293,7 +288,6 @@ a {
 }
 
 .tag-link {
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 0.75rem;
@@ -308,7 +302,6 @@ a {
   color: var(--pry-color);
   background-color: var(--sec-bgcolor);
   border-radius: 8px;
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 1.0625rem;
@@ -334,7 +327,6 @@ a {
 
 .abt {
   height: 6.3125rem;
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -344,7 +336,6 @@ a {
 }
 
 .abt-me-page {
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -384,7 +375,6 @@ a {
   width: 14.8125rem;
   display: inline-block;
   color: #000;
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
@@ -428,7 +418,6 @@ a {
 }
 
 .lang-list-name {
-  font-family: var(--pry-font-family);
   font-weight: 500;
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -465,7 +454,6 @@ footer {
 
 .contact-me {
   color: var(--sec-bgcolor);
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -474,7 +462,6 @@ footer {
 }
 
 .info {
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
@@ -501,7 +488,6 @@ footer {
 
 input[type=text],
 input[type=email] {
-  font-family: var(--pry-font-family);
   font-weight: 400;
   font-size: 1.0625rem;
   line-height: 1.25rem;
@@ -518,7 +504,6 @@ textarea {
 }
 
 textarea[name=userMessage] {
-  font-family: var(--pry-font-family);
   font-weight: 400;
   font-size: 0.9375rem;
   line-height: 1.5rem;
@@ -533,7 +518,6 @@ textarea[name=userMessage] {
   border-radius: 4px;
   padding: 8px;
   margin-bottom: 12px;
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -548,7 +532,6 @@ textarea[name=userMessage] {
   padding: 0.75rem 1rem;
   border: none;
   background-color: var(--sec-bgcolor);
-  font-family: var(--pry-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 1.0625rem;
@@ -597,7 +580,6 @@ textarea[name=userMessage] {
 }
 
 .modal-title {
-  font-family: var(--pry-font-family);
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 2.75rem;
@@ -631,7 +613,6 @@ textarea[name=userMessage] {
 }
 
 .modal-text {
-  font-family: var(--pry-font-family);
   font-weight: 300;
   font-size: 14px;
   line-height: 22px;
@@ -645,7 +626,6 @@ textarea[name=userMessage] {
 }
 
 .modal-tags a {
-  font-family: var(--pry-font-family);
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -678,7 +658,6 @@ textarea[name=userMessage] {
 
 #live-btn span,
 #src-btn span {
-  font-family: var(--pry-font-family);
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
