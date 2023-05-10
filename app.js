@@ -7,6 +7,7 @@ const closeBar = document.getElementById('close_bar');
 const lists = document.getElementById('menu_list');
 const hiddenScrol = document.getElementById('hideOverflow');
 const blurEffect = document.querySelectorAll('.toblur');
+const overflowWorkSection = document.getElementById('worksections');
 let isDisplay = true;
 
 menuBar.addEventListener('click', () => {
@@ -37,28 +38,52 @@ menuBar.addEventListener('click', () => {
 
 const data = [
   {
-    title: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    linkImg: 'images/snapshot1.png',
-    techs: ['Html', 'CSS', 'Javascript'],
+    title: "Math Web App",
+    description: `This is a website for calculating basic mathematics.
+    The website is built with ReactJS and it is a full SPA (Single Page Application) website.
+    It has 3 sections, the home, the calculator page, and the quote page.`,
+    linkImg: "images/snapshot5.png",
+    techs: ["Html", "CSS", "Javascript", "React"],
+    liveLink: "https://venerable-lolly-447136.netlify.app/",
+    githubLink: "https://github.com/Ibnballo1/Math-App",
   },
   {
-    title: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    linkImg: 'images/snapshot2.png',
-    techs: ['Html', 'CSS', 'Javascript'],
+    title: "WT BOOTCAMP 2022",
+    description: `A fun festival where people from more than 80 countries who believe in the value of
+      sharing and openness and create positive change gather and share their thoughts
+      will be held in Korea in October.`,
+    linkImg: "images/snapshot4.png",
+    techs: ["Html", "CSS", "Javascript"],
+    liveLink: "https://bit.ly/wt-universal-bootcamp",
+    githubLink: "https://github.com/Ibnballo1/Capstone-Project-1",
   },
   {
-    title: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    linkImg: 'images/snapshot3.png',
-    techs: ['Html', 'CSS', 'Javascript'],
+    title: "Todo List App",
+    description: `This is a To-Do-List App built with HTML5, CSS, and JavaScript.
+      This app enables a user to add, edit, update and remove task(s).
+      This app also integrated the use of webpack and other dependencies.`,
+    linkImg: "images/snapshot3.png",
+    techs: ["Html", "CSS", "Javascript", "Webpack"],
+    liveLink: "https://bit.ly/JS-ToDoApp",
+    githubLink: "https://github.com/Ibnballo1/ToDo-List-App",
   },
   {
-    title: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    linkImg: 'images/snapshot4.png',
-    techs: ['Html', 'CSS', 'Javascript'],
+    title: "Leaderboard API",
+    description: `The leaderboard website displays scores submitted by different players.
+      It also allows you to submit your score.`,
+    linkImg: "images/snapshot2.png",
+    techs: ["Html", "CSS", "Javascript", "Webpack"],
+    liveLink: "https://bit.ly/LeaderBoardAPI",
+    githubLink: "https://github.com/Ibnballo1/LeaderBoard-API-App",
+  },
+  {
+    title: "Cloud Site",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    linkImg: "images/snapshot1.png",
+    techs: ["Html", "CSS"],
+    liveLink: "https://bit.ly/Cloud-Site",
+    githubLink: "https://github.com/Ibnballo1/CloudSite",
   },
 ];
 
@@ -73,19 +98,21 @@ data.forEach((works) => {
 
   let listOfTechs = '';
   techs.forEach((tech) => {
-    listOfTechs += `<li class='tag-${counter + 1}'><a href="#" class="tag-link">${tech}</a></li>`;
+    listOfTechs += `<li class='tag-${
+      counter + 1
+    } flex-container'><a href="#" class="tag-link">${tech}</a></li>`;
   });
 
   const cardHTML = `
-  <div class="works work${counter + 1}">
-                <div class="image${counter + 1} project-img">
-                  
+  <div class="works work${counter + 1} flex-container">
+                <div class="image-div">
+                  <img src=${linkImg} alt='project screenshot' class='project-img' />
                 </div>
-                <div class="work-details">
+                <div class="work-details flex-container">
                     <h2 class="project-title">
                         ${title}
                     </h2>
-                    <div class="frame dv-frame">
+                    <div class="frame dv-frame jc-sb flex-container">
                         <p class="items item1">CANOPY</P>
                         <div class="items counter"></div>
                         <p class="items item2">Back End Dev</p>
@@ -95,7 +122,7 @@ data.forEach((works) => {
                     <p class="primary-text">
                         ${description}
                     </p>
-                    <ul class="tags">
+                    <ul class="tags jc-sb flex-container">
                         ${listOfTechs}
                     </ul>
                     <button type="submit" class="project-btn btn-work" data-works = "${counter}">
@@ -106,7 +133,7 @@ data.forEach((works) => {
   `;
 
   workSection.insertAdjacentHTML('beforeend', cardHTML);
-  document.querySelector(`.image${counter + 1}`).style.backgroundImage = `url("${linkImg}")`;
+  // document.querySelector(`.image${counter + 1}`).style.backgroundImage = `url("${linkImg}")`;
   // Set background image dynamically
   counter += 1;
 });
@@ -117,7 +144,7 @@ popupButtons.forEach((popBtn) => {
   popBtn.addEventListener('click', () => {
     const btnWorkIndex = popBtn.dataset.works;
     const {
-      title, description, techs, linkImg,
+      title, description, techs, linkImg, liveLink, githubLink,
     } = data[btnWorkIndex];
 
     let listOfTechs = '';
@@ -126,19 +153,19 @@ popupButtons.forEach((popBtn) => {
     });
 
     const modalPopup = `
-    <div class="modal-content">
-      <div class="modal-title-times">
+    <div class="modal-content bg-white">
+      <div class="modal-title-times flex-container jc-sb">
         <h2 class="modal-title">${title}</h2>
         <p id="close-modal" class="cls-btn">&times;</p>
       </div>
-      <div class="frame dv-frame modal-year">
+      <div class="frame dv-frame modal-year flex-container">
         <p class="items item1">CANOPY</P>
         <div class="items counter"></div>
         <p class="items item2">Back End Dev</p>
         <div class="items counter"></div>
         <p class="items item3">2015</p>
       </div>
-          <div class="modal-img">
+          <div class="modal-img flex-container">
             <img src="${linkImg}" class="modal-img-1" alt="card-image-1" >
           </div>
           <div class="desk-description">
@@ -148,17 +175,17 @@ popupButtons.forEach((popBtn) => {
               </p>
             </div>
             <div class="deskt-techs">
-              <ul class="tags modal-tags">
+              <ul class="tags jc-sb flex-container modal-tags">
                 ${listOfTechs}
               </ul>
               <hr />
-              <div class="modal-button">
-                <button id="live-btn" type="button" class="btn">
+              <div class="modal-button flex-container">
+                <a href="${liveLink}" target= "_blank" id="live-btn" type="button" class="btn flex-container bg-white">
                   <span>See live</span> <img src="images/btn-icon.svg" class="see-live-icon" alt="button live icon" />
-                </button>
-                <button id="src-btn" type="button" class="btn">
+                </a>
+                <a href="${githubLink}" id="src-btn" type="button" class="btn flex-container bg-white">
                   <span>See Source</span> <img src="images/btn-github.png" class="see-src-icon" alt="button github icon" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
