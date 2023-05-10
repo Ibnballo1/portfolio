@@ -26,9 +26,15 @@ body {
   overflow-y: hidden;
 }
 
-header {
+.flex-container {
   display: flex;
+}
+
+.jc-sb {
   justify-content: space-between;
+}
+
+.bg-white {
   background-color: #fff;
 }
 
@@ -37,13 +43,13 @@ a {
 }
 
 .icon-menu {
+  display: flex;
   position: absolute;
   left: 0;
   background-color: #6070ff;
   opacity: 0.8;
   width: 99.8%;
   height: 99.9%;
-  overflow-y: hidden;
   transition: all 0.6s linear;
 }
 
@@ -54,8 +60,6 @@ a {
 .mylogo {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
   color: #6070ff;
   line-height: 20px;
   letter-spacing: 0;
@@ -114,7 +118,6 @@ a {
 
 /* About me Home Section styles */
 .about-me {
-  display: flex;
   flex-direction: column;
   background-color: var(--sec-bgcolor);
   border-bottom-left-radius: 70px;
@@ -133,10 +136,12 @@ a {
   margin-top: 0.45rem;
 }
 
-.about-container {
-  display: flex;
-  flex-direction: column;
+.jc-center {
   justify-content: center;
+}
+
+.about-container {
+  flex-direction: column;
   padding: 1.5rem;
   height: 98.1vh;
   z-index: 1;
@@ -147,7 +152,6 @@ a {
 }
 
 .name h1 {
-  font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3.25rem;
@@ -155,7 +159,6 @@ a {
 
 .name .abt-me {
   color: var(--tertiary-color);
-  font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -172,8 +175,8 @@ a {
 }
 
 .social-media-icons {
-  list-style-type: none;
   display: flex;
+  list-style-type: none;
   justify-content: space-between;
   width: 170.17px;
 }
@@ -194,7 +197,6 @@ a {
 }
 
 .work-section .works {
-  display: flex;
   flex-direction: column;
   border: 1px solid #dfe1e6;
   background-color: var(--sec-bgcolor);
@@ -210,21 +212,17 @@ a {
 }
 
 .work-details {
-  display: flex;
   flex-direction: column;
   margin: 12px 0;
 }
 
 .project-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 2rem;
   color: var(--sec-color);
 }
 
 .frame {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 12px 0;
   width: 14.75rem;
@@ -232,7 +230,6 @@ a {
 }
 
 .items {
-  font-style: normal;
   font-weight: 600;
   font-size: 0.8125rem;
   line-height: 1rem;
@@ -256,7 +253,6 @@ a {
 }
 
 .primary-text {
-  font-style: normal;
   font-weight: 400;
   font-size: 0.9375rem;
   line-height: 1.5rem;
@@ -264,31 +260,27 @@ a {
 }
 
 .tags {
-  display: flex;
-  justify-content: space-between;
-  width: 12.6875rem;
-  height: 1.5rem;
+  width: fit-content;
   margin: 12px 0;
 }
 
 .tags li {
-  display: flex;
-  justify-content: center;
+  list-style-type: none;
   align-items: center;
   padding: 0 12px;
   height: 1.5rem;
+  margin-right: 6px;
 }
 
 .tag-1,
 .tag-2,
 .tag-3,
 .tag-4 {
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: #ebebff;
 }
 
 .tag-link {
-  font-style: normal;
   font-weight: 500;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -302,7 +294,6 @@ a {
   color: var(--pry-color);
   background-color: var(--sec-bgcolor);
   border-radius: 8px;
-  font-style: normal;
   font-weight: 500;
   font-size: 1.0625rem;
   line-height: 1.5rem;
@@ -327,7 +318,6 @@ a {
 
 .abt {
   height: 6.3125rem;
-  font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3.25rem;
@@ -336,7 +326,6 @@ a {
 }
 
 .abt-me-page {
-  font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -375,7 +364,6 @@ a {
   width: 14.8125rem;
   display: inline-block;
   color: #000;
-  font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -393,9 +381,7 @@ a {
 }
 
 .lang-list {
-  display: flex;
   align-items: center;
-  height: 4.17rem;
   background-color: #f7f7f9;
   padding: 0.5625rem 0 0.6075rem 0.75rem;
 }
@@ -423,12 +409,7 @@ a {
   line-height: 1.25rem;
 }
 
-footer {
-  background-color: #fff;
-}
-
 .footer {
-  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--pry-color);
@@ -454,7 +435,6 @@ footer {
 
 .contact-me {
   color: var(--sec-bgcolor);
-  font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3.25rem;
@@ -462,7 +442,6 @@ footer {
 }
 
 .info {
-  font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -470,7 +449,6 @@ footer {
 }
 
 .contact-form {
-  display: flex;
   flex-direction: column;
   padding: 2.8125rem 1.5rem;
   z-index: 1;
@@ -481,7 +459,6 @@ footer {
   height: 3rem;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
-  background-color: #fff;
   padding: 0.9375rem 2.375rem 0.9375rem 1rem;
   margin-bottom: 1.25rem;
 }
@@ -518,7 +495,6 @@ textarea[name=userMessage] {
   border-radius: 4px;
   padding: 8px;
   margin-bottom: 12px;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -532,7 +508,6 @@ textarea[name=userMessage] {
   padding: 0.75rem 1rem;
   border: none;
   background-color: var(--sec-bgcolor);
-  font-style: normal;
   font-weight: 500;
   font-size: 1.0625rem;
   line-height: 1.5rem;
@@ -554,7 +529,6 @@ textarea[name=userMessage] {
 .modal {
   display: none;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
@@ -569,12 +543,9 @@ textarea[name=userMessage] {
   border-radius: 16px;
   width: 90vw;
   height: 95vh;
-  background-color: #fff;
 }
 
 .modal-title-times {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
 }
@@ -594,12 +565,10 @@ textarea[name=userMessage] {
 }
 
 .modal-year {
-  display: flex;
   margin: 0 0 0 18px;
 }
 
 .modal-img {
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 6px;
@@ -640,7 +609,6 @@ textarea[name=userMessage] {
 
 .modal-button {
   margin-top: 25px;
-  display: flex;
   justify-content: space-around;
 }
 
@@ -648,12 +616,10 @@ textarea[name=userMessage] {
 #src-btn {
   border: 1px solid #6070ff;
   border-radius: 8px;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 12px 22px;
   height: 42px;
-  background-color: #fff;
 }
 
 #live-btn span,
@@ -741,7 +707,6 @@ textarea[name=userMessage] {
     width: 259px;
     height: 40px;
     font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
@@ -750,7 +715,6 @@ textarea[name=userMessage] {
   }
 
   .js-nav-list {
-    display: flex;
     align-items: baseline;
     position: relative;
   }
@@ -829,33 +793,31 @@ textarea[name=userMessage] {
   }
 
   .skills {
-    height: 29.009375rem;
     margin: 12px 0;
   }
 
   .skill {
     display: inline-block;
     border-bottom: 1px solid #dfe1e6;
-    height: 4.5rem;
     padding: 0.3rem 0.3rem;
   }
 
   .lang-lists {
     display: flex;
-    width: 16.9375rem;
+    flex-wrap: wrap;
     padding: 0.375rem;
   }
 
   .lang-list {
-    display: flex;
     flex-direction: column;
     width: 7.625rem;
     height: 7.5rem;
+    margin-right: 5px;
   }
 
   .lang-list-2,
   .lang-list-4 {
-    margin: 0 0.75rem;
+    margin-top: 0;
   }
 
   .footer {
@@ -901,7 +863,6 @@ textarea[name=userMessage] {
   }
 
   .modal-button {
-    display: flex;
     justify-content: space-between;
   }
 

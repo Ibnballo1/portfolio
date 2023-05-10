@@ -98,19 +98,21 @@ data.forEach((works) => {
 
   let listOfTechs = '';
   techs.forEach((tech) => {
-    listOfTechs += `<li class='tag-${counter + 1}'><a href="#" class="tag-link">${tech}</a></li>`;
+    listOfTechs += `<li class='tag-${
+      counter + 1
+    } flex-container'><a href="#" class="tag-link">${tech}</a></li>`;
   });
 
   const cardHTML = `
-  <div class="works work${counter + 1}">
+  <div class="works work${counter + 1} flex-container">
                 <div class="image-div">
                   <img src=${linkImg} alt='project screenshot' class='project-img' />
                 </div>
-                <div class="work-details">
+                <div class="work-details flex-container">
                     <h2 class="project-title">
                         ${title}
                     </h2>
-                    <div class="frame dv-frame">
+                    <div class="frame dv-frame jc-sb flex-container">
                         <p class="items item1">CANOPY</P>
                         <div class="items counter"></div>
                         <p class="items item2">Back End Dev</p>
@@ -120,7 +122,7 @@ data.forEach((works) => {
                     <p class="primary-text">
                         ${description}
                     </p>
-                    <ul class="tags">
+                    <ul class="tags jc-sb flex-container">
                         ${listOfTechs}
                     </ul>
                     <button type="submit" class="project-btn btn-work" data-works = "${counter}">
@@ -151,19 +153,19 @@ popupButtons.forEach((popBtn) => {
     });
 
     const modalPopup = `
-    <div class="modal-content">
-      <div class="modal-title-times">
+    <div class="modal-content bg-white">
+      <div class="modal-title-times flex-container jc-sb">
         <h2 class="modal-title">${title}</h2>
         <p id="close-modal" class="cls-btn">&times;</p>
       </div>
-      <div class="frame dv-frame modal-year">
+      <div class="frame dv-frame modal-year flex-container">
         <p class="items item1">CANOPY</P>
         <div class="items counter"></div>
         <p class="items item2">Back End Dev</p>
         <div class="items counter"></div>
         <p class="items item3">2015</p>
       </div>
-          <div class="modal-img">
+          <div class="modal-img flex-container">
             <img src="${linkImg}" class="modal-img-1" alt="card-image-1" >
           </div>
           <div class="desk-description">
@@ -173,15 +175,15 @@ popupButtons.forEach((popBtn) => {
               </p>
             </div>
             <div class="deskt-techs">
-              <ul class="tags modal-tags">
+              <ul class="tags jc-sb flex-container modal-tags">
                 ${listOfTechs}
               </ul>
               <hr />
-              <div class="modal-button">
-                <a href="${liveLink}" target= "_blank" id="live-btn" type="button" class="btn">
+              <div class="modal-button flex-container">
+                <a href="${liveLink}" target= "_blank" id="live-btn" type="button" class="btn flex-container bg-white">
                   <span>See live</span> <img src="images/btn-icon.svg" class="see-live-icon" alt="button live icon" />
                 </a>
-                <a href="${githubLink}" id="src-btn" type="button" class="btn">
+                <a href="${githubLink}" id="src-btn" type="button" class="btn flex-container bg-white">
                   <span>See Source</span> <img src="images/btn-github.png" class="see-src-icon" alt="button github icon" />
                 </a>
               </div>

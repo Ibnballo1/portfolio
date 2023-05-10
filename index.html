@@ -14,9 +14,9 @@
     </script>
 </head>
 <body id="hideOverflow">
-    <header class="headers">
+    <header class="headers flex-container bg-white jc-sb">
       <a id="toblur1" class="mylogo dv-logo toblur">My Logo</a>
-      <nav id="menu_bar" class="nav-menu">
+      <nav id="menu_bar" class="nav-menu flex-container">
           <i id="menuBarImg" class="fas fa-bars vectors"></i>
           <div id="close_bar" class="close-menu">
             <i id="close_menu" class="close" >&times;</i>  
@@ -30,10 +30,10 @@
     </header>
 
     <main>
-        <section class="about-me">
+        <section class="about-me flex-container">
             <div class="img-container desktop-bgimg">
             </div>
-            <div class="about-container">   
+            <div class="about-container flex-container jc-center">   
                
                 <div class="name">
                     <h1 class="toblur">
@@ -58,7 +58,7 @@
                         LET’S CONNECT
                     </a>
                 </div>
-                <ul class="name social-media-icons toblur">
+                <ul class="name social-media-icons jc-sb toblur">
                     <li class="twitter">
                         <a href="twitter.com/webprotekh"><i class="fa fa-twitter"></i></a>
                     </li>
@@ -78,7 +78,7 @@
             </div>
         </section>
 
-        <section class="modal">
+        <section class="modal jc-center">
 
         </section>
 
@@ -103,7 +103,7 @@
                         LET’S CONNECT
                     </p>
                 </div>
-                <ul class="name social-media-icons">
+                <ul class="name social-media-icons jc-sb">
                     <li class="github">
                         <a href="https://github.com/Ibnballo1/"><i class="fa fa-github"></i></a>
                     </li>
@@ -130,7 +130,7 @@
                     <li class="skill lang"><div class="skill-1">Languages</div> <i class="fas fa-angle-down arrow"></i></li>
                 </ul>
                     <div class="lang-lists">
-                        <div class="lang-list lang-list-1">
+                        <div class="lang-list flex-container lang-list-1">
                             <div class="lang-list-img">
                                 <img src="https://img.icons8.com/color/2x/ruby-programming-language.png" alt="Ruby icon">
                             </div>
@@ -138,17 +138,17 @@
                                 Ruby
                             </p>
                         </div>
-                        <div class="lang-list lang-list-2">
+                        <div class="lang-list flex-container lang-list-2">
                             <div class="lang-list-img"><img src="images/js-icon.png" alt="Javascript icon"></div>
                             <p class="lang-list-name">
                                 JavaSript
                             </p>
                         </div>
-                        <div class="lang-list lang-list-3">
+                        <div class="lang-list flex-container lang-list-3">
                             <div class="lang-list-img"><img src="images/html5-icon.png" alt="HTML5 icon"></div>
                             <div class="lang-list-name">HTML</div>
                         </div>
-                        <div class="lang-list lang-list-4">
+                        <div class="lang-list flex-container lang-list-4">
                             <div class="lang-list-img"><img src="images/css3-icon.png" alt="CSS3 icon"></div>
                             <div class="lang-list-name">CSS</div>
                         </div>
@@ -173,7 +173,7 @@
         </section>
     </main>
     <footer>
-        <section class="footer">
+        <section class="footer bg-white flex-container">
             <a name="contact"></a>
             <div class="footer-bg-img"></div>
             <div class="contact-details">
@@ -184,12 +184,12 @@
                     I’d love to help with it 
                 </p>
             </div>
-            <form id="form" class="contact-form" action="https://formspree.io/f/xrgjqpwb" method="POST">
+            <form id="form" class="contact-form flex-container" action="https://formspree.io/f/xrgjqpwb" method="POST">
                 <label for="username" hidden></label>
-                <input type="text" name="username" id="username" placeholder="Your username" maxlength="30" required />
+                <input type="text" name="username" id="username" placeholder="Your username" maxlength="30" class="bg-white" required />
                 
                 <label for="useremail" hidden></label>
-                <input type="email" name="useremail" id="useremail" placeholder="Enter your Email"  required>
+                <input type="email" name="useremail" id="useremail" placeholder="Enter your Email" class="bg-white"  required>
                 
                 <textarea name="userMessage" id="msg" maxlength="500" placeholder="write your message here" required></textarea>
                 <div id="errMessage"></div>
