@@ -10,14 +10,13 @@
     <title>Ibnballo's Portfolio</title>
 
     <script
-      src="https://kit.fontawesome.com/210152c720.js"
-      crossorigin="anonymous"
-    ></script>
+      src="https://kit.fontawesome.com/210152c720.js" crossorigin="anonymous">
+    </script>
 </head>
 <body id="hideOverflow">
-    <header class="headers">
+    <header class="headers flex-container bg-white jc-sb">
       <a id="toblur1" class="mylogo dv-logo toblur">My Logo</a>
-      <nav id="menu_bar" class="nav-menu">
+      <nav id="menu_bar" class="nav-menu flex-container">
           <i id="menuBarImg" class="fas fa-bars vectors"></i>
           <div id="close_bar" class="close-menu">
             <i id="close_menu" class="close" >&times;</i>  
@@ -31,10 +30,10 @@
     </header>
 
     <main>
-        <section class="about-me">
+        <section class="about-me flex-container">
             <div class="img-container desktop-bgimg">
             </div>
-            <div class="about-container">   
+            <div class="about-container flex-container jc-center">   
                
                 <div class="name">
                     <h1 class="toblur">
@@ -46,7 +45,10 @@
                 <div class="name">
                     <p class="abt-me toblur">
                         I’m a software developer! I can help you build a product , 
-                        feature or website Look through some of my work and experience! 
+                        feature or website. More than 1300+ hours of experience,
+                        including mentoring 5+ junior developers to achieve concrete goals on a strict
+                        deadline. Strong skills include
+                        <strong>React, Redux, JavaScript, Ruby on Rails and Figma!</strong>
                         If you like what you see and have a project you need coded, 
                         don’t hestiate to contact me.
                     </p>
@@ -56,7 +58,7 @@
                         LET’S CONNECT
                     </a>
                 </div>
-                <ul class="name social-media-icons toblur">
+                <ul class="name social-media-icons jc-sb toblur">
                     <li class="twitter">
                         <a href="twitter.com/webprotekh"><i class="fa fa-twitter"></i></a>
                     </li>
@@ -76,11 +78,11 @@
             </div>
         </section>
 
-        <section class="modal">
+        <section class="modal jc-center">
 
         </section>
 
-        <section class="work-section">
+        <section id="work-section" class="work-section">
             
         </section>
         <section class="about-page">
@@ -97,29 +99,29 @@
                     don’t hestiate to contact me.
                 </p>
                 <div class="name letsconnect lc-abt">
-                    <a href="#" class="lets-connect">
+                    <p class="lets-connect">
                         LET’S CONNECT
-                    </a>
+                    </p>
                 </div>
-                <ul class="name social-media-icons">
+                <ul class="name social-media-icons jc-sb">
                     <li class="github">
-                        <a href="#"><i class="fa fa-github"></i></a>
+                        <a href="https://github.com/Ibnballo1/"><i class="fa fa-github"></i></a>
                     </li>
                     <li class="linkedin">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/abdullateef-bello/"><i class="fab fa-linkedin-in"></i></a>
                     </li>
                     <li class="angellist">
-                        <a href="#"><i class="fa fa-angellist"></i></a>
+                        <a href="https://angel.co/u/ibnballo"><i class="fa fa-angellist"></i></a>
                     </li>
                     <li class="twitter">
-                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="https://twitter.com/webprotekh"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li class="medium">
-                        <a href="#"><i class="fab fa-medium"></i></a>
+                        <a href="https://medium.com/@belloabdullateef035"><i class="fab fa-medium"></i></a>
                     </li>
                 </ul>
                 <button type="submit" class="resume-btn project-btn">
-                    Get my resume
+                    <a href="http://bit.ly/3vfgrO8" download="Abdullateef Bello Resume" target="_blank">Get my resume</a>
                 </button>
             </div>
 
@@ -128,30 +130,50 @@
                     <li class="skill lang"><div class="skill-1">Languages</div> <i class="fas fa-angle-down arrow"></i></li>
                 </ul>
                     <div class="lang-lists">
-                        <div class="lang-list lang-list-1">
-                            <div class="lang-list-img"><img src="images/js-icon.png" alt="Javascript image"></div>
+                        <div class="lang-list flex-container lang-list-1">
+                            <div class="lang-list-img">
+                                <img src="https://img.icons8.com/color/2x/ruby-programming-language.png" alt="Ruby icon">
+                            </div>
+                            <p class="lang-list-name">
+                                Ruby
+                            </p>
+                        </div>
+                        <div class="lang-list flex-container lang-list-2">
+                            <div class="lang-list-img"><img src="images/js-icon.png" alt="Javascript icon"></div>
                             <p class="lang-list-name">
                                 JavaSript
                             </p>
                         </div>
-                        <div class="lang-list lang-list-2">
-                            <div class="lang-list-img"><img src="images/html5-icon.png" alt="HTML5 image"></div>
+                        <div class="lang-list flex-container lang-list-3">
+                            <div class="lang-list-img"><img src="images/html5-icon.png" alt="HTML5 icon"></div>
                             <div class="lang-list-name">HTML</div>
                         </div>
-                        <div class="lang-list lang-list-3">
-                            <div class="lang-list-img"><img src="images/css3-icon.png" alt="CSS3 image"></div>
+                        <div class="lang-list flex-container lang-list-4">
+                            <div class="lang-list-img"><img src="images/css3-icon.png" alt="CSS3 icon"></div>
                             <div class="lang-list-name">CSS</div>
                         </div>
                     </div>
                 <ul class="skill-item">
-                    <li class="skill frameworks"><div class="skill-2">Frameworks</div> <i class="fas fa-angle-right arrow"></i></li>
+                    <li class="skill frameworks"><div class="skill-2">Frameworks</div> <i class="fas fa-angle-down arrow"></i></li>
+                </ul>
+                <div class="lang-lists">
+                    <div class="lang-list lang-list-1">
+                        <div class="lang-list-img">
+                            <img src="images/icons8-react-100.png" alt="React icon">
+                        </div>
+                        <p class="lang-list-name">
+                            React
+                        </p>
+                    </div>
+                </div>
+                <ul class="skill-item">
                     <li class="skill sk"><div class="skill-3">Skills</div> <i class="fas fa-angle-right arrow"></i></li>
                 </ul>
             </div>
         </section>
     </main>
     <footer>
-        <section class="footer">
+        <section class="footer bg-white flex-container">
             <a name="contact"></a>
             <div class="footer-bg-img"></div>
             <div class="contact-details">
@@ -162,12 +184,12 @@
                     I’d love to help with it 
                 </p>
             </div>
-            <form id="form" class="contact-form" action="https://formspree.io/f/xrgjqpwb" method="POST">
+            <form id="form" class="contact-form flex-container" action="https://formspree.io/f/xrgjqpwb" method="POST">
                 <label for="username" hidden></label>
-                <input type="text" name="username" id="username" placeholder="Your username" maxlength="30" required />
+                <input type="text" name="username" id="username" placeholder="Your username" maxlength="30" class="bg-white" required />
                 
                 <label for="useremail" hidden></label>
-                <input type="email" name="useremail" id="useremail" placeholder="Enter your Email"  required>
+                <input type="email" name="useremail" id="useremail" placeholder="Enter your Email" class="bg-white"  required>
                 
                 <textarea name="userMessage" id="msg" maxlength="500" placeholder="write your message here" required></textarea>
                 <div id="errMessage"></div>
