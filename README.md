@@ -30,4 +30,4 @@ Kindly give a :hearts: if you like this.
 - I expressed my gratitude for everyone.
 
 # License
-This project is [MIT](C:\Users\J T COMPUTER\Microverse-April18\portfolio\MIT.md).
+This project is [MIT](https://github.com/Ibnballo1/portfolio/blob/8f9454e28a95095f324078c1c8b5d5315b0109a1/MIT.md).
