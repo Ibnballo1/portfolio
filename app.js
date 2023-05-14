@@ -8,10 +8,12 @@ const lists = document.getElementById('menu_list');
 const hiddenScrol = document.getElementById('hideOverflow');
 const blurEffect = document.querySelectorAll('.toblur');
 const overflowWorkSection = document.getElementById('worksections');
+const headers = document.querySelector('.headers');
 let isDisplay = true;
 
 menuBar.addEventListener('click', () => {
   if (isDisplay) {
+    // headers.style.top = '100px';
     hamburgerBtn.style.display = 'none';
     times.style.display = 'block';
     closeBar.classList.add('icon-menu');

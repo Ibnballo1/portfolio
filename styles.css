@@ -30,6 +30,12 @@ body {
   display: flex;
 }
 
+.headers {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .jc-sb {
   justify-content: space-between;
 }
@@ -49,7 +55,7 @@ a {
   background-color: #6070ff;
   opacity: 0.8;
   width: 99.8%;
-  height: 99.9%;
+  height: 100vh;
   transition: all 0.6s linear;
 }
 
