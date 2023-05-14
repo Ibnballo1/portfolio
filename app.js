@@ -105,6 +105,7 @@ data.forEach((works) => {
 
   const cardHTML = `
   <div class="works work${counter + 1} flex-container">
+                <a name="portfolio"></a>
                 <div class="image-div">
                   <img src=${linkImg} alt='project screenshot' class='project-img' />
                 </div>
