@@ -30,6 +30,12 @@ body {
   display: flex;
 }
 
+.headers {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .jc-sb {
   justify-content: space-between;
 }
@@ -49,7 +55,7 @@ a {
   background-color: #6070ff;
   opacity: 0.8;
   width: 99.8%;
-  height: 99.9%;
+  height: 100vh;
   transition: all 0.6s linear;
 }
 
@@ -533,16 +539,16 @@ textarea[name=userMessage] {
   width: 100vw;
   height: 100vh;
   position: fixed;
+  padding: 1rem;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 3;
+  z-index: 200;
 }
 
 .modal-content {
   border-radius: 16px;
-  width: 90vw;
-  height: 95vh;
+  padding-bottom: 1rem;
 }
 
 .modal-title-times {
@@ -840,7 +846,7 @@ textarea[name=userMessage] {
   /* Desktop modal */
 
   .modal-content {
-    width: 80vw;
+    width: 65vw;
   }
 
   .modal-title {
