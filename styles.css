@@ -539,16 +539,16 @@ textarea[name=userMessage] {
   width: 100vw;
   height: 100vh;
   position: fixed;
+  padding: 1rem;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 3;
+  z-index: 200;
 }
 
 .modal-content {
   border-radius: 16px;
-  width: 90vw;
-  height: 95vh;
+  padding-bottom: 1rem;
 }
 
 .modal-title-times {
@@ -846,7 +846,7 @@ textarea[name=userMessage] {
   /* Desktop modal */
 
   .modal-content {
-    width: 80vw;
+    width: 65vw;
   }
 
   .modal-title {
