@@ -17,6 +17,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--pry-font-family);
   background: var(--pry-bgcolor);
@@ -194,6 +199,20 @@ a {
   color: var(--other-color);
 }
 
+.get-in-touch {
+  border: none;
+  border-radius: 8px;
+  width: fit-content;
+  background-color: #396df2;
+  padding: 0 8px;
+}
+
+.get-in-touch a {
+  color: #fff;
+  font-size: 1.625rem;
+  font-weight: 300;
+}
+
 /* work section styles */
 .work-section {
   display: grid;
@@ -213,8 +232,8 @@ a {
 .project-img {
   border-radius: 8px;
   width: 100%;
-  height: 100%;
-  aspect-ratio: 16/9;
+  border: 2px solid red;
+  object-fit: contain;
 }
 
 .work-details {
@@ -757,7 +776,8 @@ textarea[name=userMessage] {
   }
 
   .image-div {
-    height: 28rem;
+    border: 2px solid greenyellow;
+    /* height: 28rem; */
     margin-right: 1.375rem;
   }
 
