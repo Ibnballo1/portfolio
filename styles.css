@@ -222,6 +222,7 @@ a {
 }
 
 .work-section .works {
+  display: flex;
   flex-direction: column;
   border: 1px solid #dfe1e6;
   background-color: var(--sec-bgcolor);
@@ -232,7 +233,6 @@ a {
 .project-img {
   border-radius: 8px;
   width: 100%;
-  border: 2px solid red;
   object-fit: contain;
 }
 
@@ -767,17 +767,17 @@ textarea[name=userMessage] {
 
   .work-section {
     padding: 4.4375rem;
-    gap: 8.875rem;
   }
 
   .work-section .works {
-    flex-direction: row;
+    /* flex-direction: row; */
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
     padding: 1.5rem;
   }
 
   .image-div {
-    border: 2px solid greenyellow;
-    /* height: 28rem; */
     margin-right: 1.375rem;
   }
 
