@@ -51,9 +51,7 @@ const data = [
   },
   {
     title: "WT BOOTCAMP 2022",
-    description: `A fun festival where people from more than 80 countries who believe in the value of
-      sharing and openness and create positive change gather and share their thoughts
-      will be held in Korea in October.`,
+    description: `WT Bootcamp is a conference website where professionals from diverse backgrounds gather to engage in dynamic discussions about software development.`,
     linkImg: "images/snapshot4.png",
     techs: ["Html", "CSS", "Javascript"],
     liveLink: "https://bit.ly/wt-universal-bootcamp",
