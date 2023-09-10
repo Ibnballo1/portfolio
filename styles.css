@@ -36,6 +36,8 @@ body {
 }
 
 .headers {
+  padding: 0.875rem 1.5rem 0.875rem 0.75rem;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -62,6 +64,7 @@ a {
   width: 99.8%;
   height: 100vh;
   transition: all 0.6s linear;
+  border: 2px solid brown;
 }
 
 .dv-nav {
@@ -69,8 +72,7 @@ a {
 }
 
 .mylogo {
-  line-height: 20px;
-  margin: 58px 0 26px 24px;
+  margin: 0 12px;
   width: 35px;
   height: 35px;
 }
@@ -78,6 +80,7 @@ a {
 .mylogo img {
   width: 100%;
   height: 100%;
+  border-radius: 100%;
 }
 
 .vectors {
@@ -85,7 +88,7 @@ a {
   color: #6070ff;
   width: 18px;
   height: 12px;
-  margin: 62px 36px 35px;
+  margin: 0 1.5rem;
 }
 
 .close {
