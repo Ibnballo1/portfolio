@@ -210,7 +210,6 @@ a {
 .fa-envelope,
 .fa-angellist {
   color: var(--other-color);
-  /* color: red !important; */
 }
 
 .get-in-touch {
@@ -771,6 +770,9 @@ textarea[name=userMessage] {
     padding-right: 0.5rem;
     padding-left: 2.1625rem;
     height: 52.875rem;
+    background-image: url('images/desktop-bgimg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .img-container {
