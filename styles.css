@@ -262,7 +262,6 @@ a {
 
 .frame {
   align-items: center;
-  margin: 12px 0;
   width: 14.75rem;
   height: 32px;
 }
@@ -323,6 +322,15 @@ a {
   font-size: 0.75rem;
   line-height: 1rem;
   color: var(--pry-color);
+}
+
+.desk-description {
+  height: 350px;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .project-btn {
@@ -579,14 +587,16 @@ textarea[name=userMessage] {
 }
 
 .modal-content {
-  border-radius: 16px;
-  padding-bottom: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 681px;
+  border: 1px solid #DFE1E6;
 }
 
-.modal-title-times {
+/* .modal-title-times {
   align-items: center;
   padding: 0 1rem;
-}
+} */
 
 .modal-title {
   font-weight: 800;
@@ -598,25 +608,26 @@ textarea[name=userMessage] {
 .cls-btn {
   cursor: pointer;
   color: #67798e;
-  font-weight: 700;
   font-size: 1.75rem;
+  width: 24px;
+  height: 24px;
 }
 
 .modal-year {
-  margin: 0 0 0 18px;
+  margin-bottom: 12px;
+  justify-content: space-between;
 }
 
 .modal-img {
   flex-direction: column;
   align-items: center;
-  margin-bottom: 6px;
-  padding: 0 12px;
+  margin-bottom: 12px;
 }
 
 .modal-img img {
   width: 100%;
   height: 100%;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .modal-text {
@@ -624,12 +635,8 @@ textarea[name=userMessage] {
   font-size: 14px;
   line-height: 22px;
   text-align: justify;
-  margin: auto 12px;
+  margin-bottom: 12px;
   padding-bottom: 12px;
-}
-
-.modal-tags {
-  margin: 0 0 20px 12px;
 }
 
 .modal-tags a {
@@ -641,7 +648,6 @@ textarea[name=userMessage] {
 
 .deskt-techs hr {
   border: 1px solid #ebecf0;
-  margin: 0 auto;
   width: 90%;
 }
 
