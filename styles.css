@@ -324,15 +324,6 @@ a {
   color: var(--pry-color);
 }
 
-.desk-description {
-  height: 350px;
-  /* border: 2px solid red; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 12px;
-}
-
 .project-btn {
   border: 1px solid #6070ff;
   width: 7.75rem;
@@ -589,14 +580,8 @@ textarea[name=userMessage] {
 .modal-content {
   border-radius: 1rem;
   padding: 1rem;
-  height: 681px;
   border: 1px solid #DFE1E6;
 }
-
-/* .modal-title-times {
-  align-items: center;
-  padding: 0 1rem;
-} */
 
 .modal-title {
   font-weight: 800;
