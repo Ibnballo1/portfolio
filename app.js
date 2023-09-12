@@ -40,6 +40,14 @@ menuBar.addEventListener('click', () => {
 
 const data = [
   {
+    title: "Debt Manager App",
+    description: `This is a straightforward web application designed to assist users in efficiently managing their debts. With user authentication in place, this app empowers individuals to create, read, update, and delete debt records, helping them maintain financial clarity and stay organized.`,
+    linkImg: "images/snapshot6.png",
+    techs: ["Ruby on Rails", "Html", "CSS"],
+    liveLink: "https://debt-manager.fly.dev/",
+    githubLink: "https://github.com/Ibnballo1/debt_manager",
+  },
+  {
     title: "Math Web App",
     description: `This is a website for calculating basic mathematics.
     The website is built with ReactJS and it is a full SPA (Single Page Application) website.
@@ -98,9 +106,8 @@ data.forEach((works) => {
 
   let listOfTechs = '';
   techs.forEach((tech) => {
-    listOfTechs += `<li class='tag-${
-      counter + 1
-    } flex-container'><a href="#" class="tag-link">${tech}</a></li>`;
+    listOfTechs += `<li class='tag-${counter + 1
+      } flex-container'><a href="#" class="tag-link">${tech}</a></li>`;
   });
 
   const cardHTML = `
