@@ -764,12 +764,32 @@ textarea[name=userMessage] {
     background-image: url('images/desktop-bgimg.png');
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
   }
 
   .img-container {
     background-image: url('images/desktop-bgimg.png');
     background-position: unset;
     background-size: contain;
+  }
+
+  .name {
+    width: 65vw;
+  }
+
+  .name h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+
+  .name .abt-me {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .social-media-icons {
+    width: 170.17px;
   }
 
   .work-section {
