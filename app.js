@@ -44,6 +44,8 @@ const data = [
     description: `This is a straightforward web application designed to assist users in efficiently managing their debts. With user authentication in place, this app empowers individuals to create, read, update, and delete debt records, helping them maintain financial clarity and stay organized.`,
     linkImg: "images/snapshot6.png",
     techs: ["Ruby on Rails", "Html", "CSS"],
+    dev: "FullStack",
+    year: "2023",
     liveLink: "https://debt-manager.fly.dev/",
     githubLink: "https://github.com/Ibnballo1/debt_manager",
   },
@@ -54,6 +56,8 @@ const data = [
     It has 3 sections, the home, the calculator page, and the quote page.`,
     linkImg: "images/snapshot5.png",
     techs: ["Html", "CSS", "Javascript", "React"],
+    dev: "Front End",
+    year: "2022",
     liveLink: "https://venerable-lolly-447136.netlify.app/",
     githubLink: "https://github.com/Ibnballo1/Math-App",
   },
@@ -62,6 +66,8 @@ const data = [
     description: `WT Bootcamp is a conference website where professionals from diverse backgrounds gather to engage in dynamic discussions about software development.`,
     linkImg: "images/snapshot4.png",
     techs: ["Html", "CSS", "Javascript"],
+    dev: "Front End",
+    year: "2022",
     liveLink: "https://bit.ly/wt-universal-bootcamp",
     githubLink: "https://github.com/Ibnballo1/Capstone-Project-1",
   },
@@ -72,6 +78,8 @@ const data = [
       This app also integrated the use of webpack and other dependencies.`,
     linkImg: "images/snapshot3.png",
     techs: ["Html", "CSS", "Javascript", "Webpack"],
+    dev: "Front End",
+    year: "2022",
     liveLink: "https://bit.ly/JS-ToDoApp",
     githubLink: "https://github.com/Ibnballo1/ToDo-List-App",
   },
@@ -81,6 +89,8 @@ const data = [
       It also allows you to submit your score.`,
     linkImg: "images/snapshot2.png",
     techs: ["Html", "CSS", "Javascript", "Webpack"],
+    dev: "Front End",
+    year: "2022",
     liveLink: "https://bit.ly/LeaderBoardAPI",
     githubLink: "https://github.com/Ibnballo1/LeaderBoard-API-App",
   },
@@ -90,6 +100,8 @@ const data = [
       "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     linkImg: "images/snapshot1.png",
     techs: ["Html", "CSS"],
+    dev: "Front End",
+    year: "2020",
     liveLink: "https://bit.ly/Cloud-Site",
     githubLink: "https://github.com/Ibnballo1/CloudSite",
   },
@@ -101,7 +113,7 @@ let counter = 0;
 
 data.forEach((works) => {
   const {
-    title, description, linkImg, techs,
+    title, description, linkImg, techs, dev, year
   } = works;
 
   let listOfTechs = '';
@@ -122,9 +134,9 @@ data.forEach((works) => {
                     <div class="frame dv-frame jc-sb flex-container">
                         <p class="items item1">CANOPY</P>
                         <div class="items counter"></div>
-                        <p class="items item2">Back End Dev</p>
+                        <p class="items item2">${dev} Dev</p>
                         <div class="items counter"></div>
-                        <p class="items item3">2015</p>
+                        <p class="items item3">${year}</p>
                     </div>
                     <p class="primary-text">
                         ${description}
@@ -151,7 +163,7 @@ popupButtons.forEach((popBtn) => {
   popBtn.addEventListener('click', () => {
     const btnWorkIndex = popBtn.dataset.works;
     const {
-      title, description, techs, linkImg, liveLink, githubLink,
+      title, description, techs, linkImg, dev, year, liveLink, githubLink,
     } = data[btnWorkIndex];
 
     let listOfTechs = '';
@@ -168,9 +180,9 @@ popupButtons.forEach((popBtn) => {
       <div class="frame dv-frame modal-year flex-container">
         <p class="items item1">CANOPY</P>
         <div class="items counter"></div>
-        <p class="items item2">Back End Dev</p>
+        <p class="items item2">${dev} Dev</p>
         <div class="items counter"></div>
-        <p class="items item3">2015</p>
+        <p class="items item3">${year}</p>
       </div>
           <div class="modal-img flex-container">
             <img src="${linkImg}" class="modal-img-1" alt="card-image-1" >
