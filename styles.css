@@ -36,11 +36,12 @@ body {
 }
 
 .headers {
-  padding: 0.875rem 1.5rem 0.875rem 0.75rem;
+  padding: 0.875rem 0.75rem;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: -1px 8px 5px 0px rgba(146, 144, 144, 0.75);
 }
 
 .jc-sb {
@@ -72,15 +73,28 @@ a {
 }
 
 .mylogo {
-  margin: 0 12px;
-  width: 35px;
-  height: 35px;
+  color: #6070FF;
+  padding: 3px;
+  line-height: 18px;
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.mylogo img {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
+.dv-logo,
+.nav-menu {
+  margin-top: 0;
+  animation-duration: 1.5s;
+  animation-name: slide-bottom;
+  animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .vectors {
@@ -669,7 +683,7 @@ textarea[name=userMessage] {
 
   .headers {
     margin-top: 0.0625rem;
-    padding-top: 0.9375rem;
+    padding: 0.9375rem 12rem 0.85rem;
     align-items: center;
   }
 
@@ -683,32 +697,6 @@ textarea[name=userMessage] {
     width: 0;
     height: 0;
     margin: 0;
-  }
-
-  .dv-logo {
-    margin-top: 0;
-    animation-duration: 3s;
-    animation-name: rotation;
-    animation-iteration-count: 2;
-    animation-timing-function: ease-in-out;
-  }
-
-  @keyframes rotation {
-    from {
-      transform: rotate(2deg);
-      color: #ee45ff;
-      font-size: 6rem;
-    }
-
-    50% {
-      transform: rotate(180deg);
-      color: #f00;
-      font-size: 3rem;
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
   }
 
   #menuBarImg {
