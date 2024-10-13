@@ -158,19 +158,6 @@ a {
   background-size: contain;
 }
 
-/* 
-.img-container {
-  height: 93vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin-top: 0.45rem;
-} */
-
 .jc-center {
   justify-content: center;
 }
@@ -180,7 +167,22 @@ a {
   padding: 1.5rem;
   height: 98.1vh;
   z-index: 1;
+  position: relative;
+  margin-top: 0;
+  animation-duration: 1.5s;
+  animation-name: slide-top;
+  animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 
 .name {
   margin: 12px 0;
@@ -203,11 +205,13 @@ a {
 .letsconnect {
   margin: 0;
   font-style: var(--pry-font-style);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #7F8CFF;
-  text-decoration: none;
+}
+
+.letsconnect a {
+  color: #396df2;
 }
 
 .social-media-icons {
@@ -224,20 +228,6 @@ a {
 .fa-envelope,
 .fa-angellist {
   color: var(--other-color);
-}
-
-.get-in-touch {
-  border: none;
-  border-radius: 8px;
-  width: fit-content;
-  background-color: #396df2;
-  padding: 0 8px;
-}
-
-.get-in-touch a {
-  color: #fff;
-  font-size: 1.625rem;
-  font-weight: 300;
 }
 
 /* work section styles */
@@ -772,7 +762,7 @@ textarea[name=userMessage] {
   }
 
   .name .abt-me {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     line-height: 2rem;
   }
 
