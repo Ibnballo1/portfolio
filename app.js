@@ -40,7 +40,8 @@ menuBar.addEventListener('click', () => {
 
 const data = [
   {
-    title: "Debt Manager App",
+    title: "DebtEase",
+    company: "Side Project",
     description: `This is a straightforward web application designed to assist users in efficiently managing their debts. With user authentication in place, this app empowers individuals to create, read, update, and delete debt records, helping them maintain financial clarity and stay organized.`,
     linkImg: "images/snapshot6.png",
     techs: ["Ruby on Rails", "Html", "CSS"],
@@ -50,9 +51,60 @@ const data = [
     githubLink: "https://github.com/Ibnballo1/debt_manager",
   },
   {
+    title: "WT BOOTCAMP 2022",
+    company: "FREELANCE",
+    description: `WT Bootcamp is a conference website where professionals from diverse backgrounds gather to engage in dynamic discussions about software development.`,
+    linkImg: "images/snapshot4.png",
+    techs: ["Html", "CSS", "Javascript"],
+    dev: "Front End",
+    year: "2022",
+    liveLink: "https://ibnballo1.github.io/Capstone-Project-1/",
+    githubLink: "https://github.com/Ibnballo1/Capstone-Project-1",
+  },
+  {
+    title: "Roam Vista",
+    company: "FREELANCE",
+    description: `Roam Vista is an immersive one-page website designed to inspire travelers by showcasing breathtaking destinations,
+        vibrant cultures, and travel tips. The website captures the essence of adventure and discovery through beautiful imagery and a clean,
+        user-friendly layout. Built with HTML and CSS.`,
+    linkImg: "images/snapshot7.png",
+    techs: ["Html", "CSS"],
+    dev: "Front End",
+    year: "2023",
+    liveLink: "https://fastidious-sprite-3d6b1d.netlify.app",
+    githubLink: "https://github.com/Ibnballo1/travel-website",
+  },
+  {
+    title: "Todo List App",
+    company: "FREELANCE",
+    description: `This is a To-Do-List App built with HTML5, CSS, and JavaScript.
+      This app enables a user to add, edit, update and remove task(s).
+      This app also integrated the use of webpack and other dependencies.`,
+    linkImg: "images/snapshot3.png",
+    techs: ["Html", "CSS", "Javascript", "Webpack"],
+    dev: "Front End",
+    year: "2022",
+    liveLink: "https://marvelous-frangipane-df8372.netlify.app/",
+    githubLink: "https://github.com/Ibnballo1/ToDo-List-App",
+  },
+  {
+    title: "Ella Lens",
+    company: "FREELANCE",
+    description: `Ella Lens is an immersive one-page website dedicated to the artistry of a female photographer,
+        weaving visual narratives that celebrate life's beauty through captivating moments and storytelling.
+        Build with Html and CSS`,
+    linkImg: "images/snapshot2.png",
+    techs: ["Html", "CSS"],
+    dev: "Front End",
+    year: "2023",
+    liveLink: "https://prismatic-kleicha-e790c2.netlify.app/",
+    githubLink: "https://github.com/Ibnballo1/photograph",
+  },
+  {
     title: "Math Web App",
+    company: "MICROVERSE",
     description: `This is a website for calculating basic mathematics.
-    The website is built with ReactJS and it is a full SPA (Single Page Application) website.
+    The website is built with ReactJS and React Router.
     It has 3 sections, the home, the calculator page, and the quote page.`,
     linkImg: "images/snapshot5.png",
     techs: ["Html", "CSS", "Javascript", "React"],
@@ -62,47 +114,15 @@ const data = [
     githubLink: "https://github.com/Ibnballo1/Math-App",
   },
   {
-    title: "WT BOOTCAMP 2022",
-    description: `WT Bootcamp is a conference website where professionals from diverse backgrounds gather to engage in dynamic discussions about software development.`,
-    linkImg: "images/snapshot4.png",
-    techs: ["Html", "CSS", "Javascript"],
-    dev: "Front End",
-    year: "2022",
-    liveLink: "https://bit.ly/wt-universal-bootcamp",
-    githubLink: "https://github.com/Ibnballo1/Capstone-Project-1",
-  },
-  {
-    title: "Todo List App",
-    description: `This is a To-Do-List App built with HTML5, CSS, and JavaScript.
-      This app enables a user to add, edit, update and remove task(s).
-      This app also integrated the use of webpack and other dependencies.`,
-    linkImg: "images/snapshot3.png",
-    techs: ["Html", "CSS", "Javascript", "Webpack"],
-    dev: "Front End",
-    year: "2022",
-    liveLink: "https://bit.ly/JS-ToDoApp",
-    githubLink: "https://github.com/Ibnballo1/ToDo-List-App",
-  },
-  {
-    title: "Leaderboard API",
-    description: `The leaderboard website displays scores submitted by different players.
-      It also allows you to submit your score.`,
-    linkImg: "images/snapshot2.png",
-    techs: ["Html", "CSS", "Javascript", "Webpack"],
-    dev: "Front End",
-    year: "2022",
-    liveLink: "https://bit.ly/LeaderBoardAPI",
-    githubLink: "https://github.com/Ibnballo1/LeaderBoard-API-App",
-  },
-  {
     title: "Cloud Site",
+    company: "FREELANCE",
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     linkImg: "images/snapshot1.png",
     techs: ["Html", "CSS"],
     dev: "Front End",
     year: "2020",
-    liveLink: "https://bit.ly/Cloud-Site",
+    liveLink: "https://fastidious-sprite-3d6b1d.netlify.app",
     githubLink: "https://github.com/Ibnballo1/CloudSite",
   },
 ];
@@ -113,7 +133,7 @@ let counter = 0;
 
 data.forEach((works) => {
   const {
-    title, description, linkImg, techs, dev, year
+    title, company, description, linkImg, techs, dev, year
   } = works;
 
   let listOfTechs = '';
@@ -132,10 +152,10 @@ data.forEach((works) => {
                         ${title}
                     </h2>
                     <div class="frame dv-frame jc-sb flex-container">
-                        <p class="items item1">CANOPY</P>
-                        <div class="items counter"></div>
+                        <p class="items item1">${company}</P>
+                        <div class="items counter">.</div>
                         <p class="items item2">${dev} Dev</p>
-                        <div class="items counter"></div>
+                        <div class="items counter">.</div>
                         <p class="items item3">${year}</p>
                     </div>
                     <p class="primary-text">
@@ -152,8 +172,6 @@ data.forEach((works) => {
   `;
 
   workSection.insertAdjacentHTML('beforeend', cardHTML);
-  // document.querySelector(`.image${counter + 1}`).style.backgroundImage = `url("${linkImg}")`;
-  // Set background image dynamically
   counter += 1;
 });
 
