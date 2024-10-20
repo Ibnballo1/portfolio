@@ -36,11 +36,12 @@ body {
 }
 
 .headers {
-  padding: 0.875rem 1.5rem 0.875rem 0.75rem;
+  padding: 0.875rem 0.75rem;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: -1px 8px 5px 0px rgba(146, 144, 144, 0.75);
 }
 
 .jc-sb {
@@ -72,15 +73,28 @@ a {
 }
 
 .mylogo {
-  margin: 0 12px;
-  width: 35px;
-  height: 35px;
+  color: #6070FF;
+  padding: 3px;
+  line-height: 18px;
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.mylogo img {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
+.dv-logo,
+.nav-menu {
+  margin-top: 0;
+  animation-duration: 1.5s;
+  animation-name: slide-bottom;
+  animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .vectors {
@@ -144,19 +158,6 @@ a {
   background-size: contain;
 }
 
-/* 
-.img-container {
-  height: 93vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin-top: 0.45rem;
-} */
-
 .jc-center {
   justify-content: center;
 }
@@ -166,7 +167,22 @@ a {
   padding: 1.5rem;
   height: 98.1vh;
   z-index: 1;
+  position: relative;
+  margin-top: 0;
+  animation-duration: 1.5s;
+  animation-name: slide-top;
+  animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 
 .name {
   margin: 12px 0;
@@ -189,11 +205,13 @@ a {
 .letsconnect {
   margin: 0;
   font-style: var(--pry-font-style);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #7F8CFF;
-  text-decoration: none;
+}
+
+.letsconnect a {
+  color: #396df2;
 }
 
 .social-media-icons {
@@ -212,26 +230,12 @@ a {
   color: var(--other-color);
 }
 
-.get-in-touch {
-  border: none;
-  border-radius: 8px;
-  width: fit-content;
-  background-color: #396df2;
-  padding: 0 8px;
-}
-
-.get-in-touch a {
-  color: #fff;
-  font-size: 1.625rem;
-  font-weight: 300;
-}
-
 /* work section styles */
 .work-section {
   display: grid;
   grid-template-columns: 1fr;
   gap: 88px;
-  padding: 7.125rem 1.5rem;
+  padding: 1.5rem;
 }
 
 .work-section .works {
@@ -239,6 +243,7 @@ a {
   flex-direction: column;
   border: 1px solid #dfe1e6;
   background-color: var(--sec-bgcolor);
+  border: 0.5px solid #6070FF;
   border-radius: 1rem;
   padding: 1rem;
 }
@@ -283,10 +288,9 @@ a {
 }
 
 .counter {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #c1c7d0;
+  font-size: 35px;
+  margin-top: -15px;
+  color: #c1c7d0;
 }
 
 .primary-text {
@@ -581,6 +585,9 @@ textarea[name=userMessage] {
   border-radius: 1rem;
   padding: 1rem;
   border: 1px solid #DFE1E6;
+  width: 95%;
+  height: 95vh;
+  overflow-y: scroll;
 }
 
 .modal-title {
@@ -669,7 +676,7 @@ textarea[name=userMessage] {
 
   .headers {
     margin-top: 0.0625rem;
-    padding-top: 0.9375rem;
+    padding: 0.9375rem 12rem 0.85rem;
     align-items: center;
   }
 
@@ -683,32 +690,6 @@ textarea[name=userMessage] {
     width: 0;
     height: 0;
     margin: 0;
-  }
-
-  .dv-logo {
-    margin-top: 0;
-    animation-duration: 3s;
-    animation-name: rotation;
-    animation-iteration-count: 2;
-    animation-timing-function: ease-in-out;
-  }
-
-  @keyframes rotation {
-    from {
-      transform: rotate(2deg);
-      color: #ee45ff;
-      font-size: 6rem;
-    }
-
-    50% {
-      transform: rotate(180deg);
-      color: #f00;
-      font-size: 3rem;
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
   }
 
   #menuBarImg {
@@ -784,7 +765,7 @@ textarea[name=userMessage] {
   }
 
   .name .abt-me {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     line-height: 2rem;
   }
 
@@ -793,11 +774,10 @@ textarea[name=userMessage] {
   }
 
   .work-section {
-    padding: 4.4375rem;
+    padding: 3.5rem 12.375rem;
   }
 
   .work-section .works {
-    /* flex-direction: row; */
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
@@ -811,9 +791,11 @@ textarea[name=userMessage] {
   /* --Transition-- */
 
   .image-div img {
+    height: 100%;
     transition-property: width;
     transition-duration: 4s;
     transition-delay: 2s;
+    border-radius: 16px;
   }
 
   .image-div img:hover {
@@ -826,8 +808,40 @@ textarea[name=userMessage] {
     padding: 24px;
   }
 
+  .project-title {
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  
+  .frame {
+    width: fit-content;
+    height: 32px;
+    margin-bottom: 24px;
+  }
+
+  .items {
+    font-weight: 500;
+    font-size: 1.235rem;
+    padding-right: 12px;
+  }
+  
+  .item2,
+  .item3 {
+    color: #7a869a;
+    padding-left: 12px;
+  }
+  
+  .counter {
+    padding: 0;
+    font-size: 35px;
+    margin-top: -15px;
+    color: #c1c7d0;
+  }
+  
   .work2 .image-div,
-  .work4 .image-div {
+  .work4 .image-div,
+  .work6 .image-div {
     order: 2;
     margin-right: 0;
     margin-left: 1.375rem;
