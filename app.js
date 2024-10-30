@@ -71,7 +71,7 @@ const data = [
     techs: ["Html", "CSS"],
     dev: "Front End",
     year: "2023",
-    liveLink: "https://fastidious-sprite-3d6b1d.netlify.app",
+    liveLink: "https://classy-cucurucho-ef86a2.netlify.app/",
     githubLink: "https://github.com/Ibnballo1/travel-website",
   },
   {
@@ -181,7 +181,7 @@ popupButtons.forEach((popBtn) => {
   popBtn.addEventListener('click', () => {
     const btnWorkIndex = popBtn.dataset.works;
     const {
-      title, description, techs, linkImg, dev, year, liveLink, githubLink,
+      title, company, description, techs, linkImg, dev, year, liveLink, githubLink,
     } = data[btnWorkIndex];
 
     let listOfTechs = '';
@@ -196,7 +196,7 @@ popupButtons.forEach((popBtn) => {
         <p id="close-modal" class="cls-btn">&times;</p>
       </div>
       <div class="frame dv-frame modal-year flex-container">
-        <p class="items item1">CANOPY</P>
+        <p class="items item1">${company}</P>
         <div class="items counter"></div>
         <p class="items item2">${dev} Dev</p>
         <div class="items counter"></div>

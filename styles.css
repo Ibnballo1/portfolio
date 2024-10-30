@@ -230,6 +230,20 @@ a {
   color: var(--other-color);
 }
 
+.get-in-touch {
+  border: none;
+  border-radius: 8px;
+  width: fit-content;
+  background-color: #396df2;
+  padding: 0 8px;
+}
+
+.get-in-touch a {
+  color: #fff;
+  font-size: 1.625rem;
+  font-weight: 300;
+}
+
 /* work section styles */
 .work-section {
   display: grid;
@@ -593,7 +607,6 @@ textarea[name=userMessage] {
 .modal-title {
   font-weight: 800;
   font-size: 1.5rem;
-  line-height: 2.75rem;
   color: #172b4d;
 }
 
@@ -606,8 +619,12 @@ textarea[name=userMessage] {
 }
 
 .modal-year {
-  margin-bottom: 12px;
-  justify-content: space-between;
+  width: fit-content;
+  margin-bottom: 8px;
+}
+
+.modal-year p {
+  padding-right: 8px;
 }
 
 .modal-img {
@@ -644,8 +661,8 @@ textarea[name=userMessage] {
 }
 
 .modal-button {
-  margin-top: 25px;
-  justify-content: space-around;
+  margin-top: 15px;
+  justify-content: left;
 }
 
 #live-btn,
@@ -654,7 +671,8 @@ textarea[name=userMessage] {
   border-radius: 8px;
   justify-content: center;
   align-items: center;
-  padding: 12px 22px;
+  margin-right: 8px;
+  padding: 0 12px;
   height: 42px;
 }
 
@@ -792,14 +810,7 @@ textarea[name=userMessage] {
 
   .image-div img {
     height: 100%;
-    transition-property: width;
-    transition-duration: 4s;
-    transition-delay: 2s;
     border-radius: 16px;
-  }
-
-  .image-div img:hover {
-    width: 80%;
   }
 
   /* --Transition-- */
@@ -911,9 +922,18 @@ textarea[name=userMessage] {
   }
 
   .modal-title {
-    font-size: 42px;
-    line-height: 44px;
+    font-size: 40px;
+    line-height: 42px;
     margin: 14px 0 0 14px;
+  }
+
+  .modal-year {
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+
+  .modal-year p {
+    font-size: 1rem;
   }
 
   .modal-img-1 {
@@ -929,27 +949,24 @@ textarea[name=userMessage] {
     padding: 0 8px;
   }
 
-  .modal-button {
-    justify-content: space-between;
-  }
-
   #live-btn,
   #src-btn {
     padding: 6px 11px;
   }
 
   #live-btn {
-    width: 49%;
+    width: 40%;
+    margin-right: 8px;
   }
 
   #src-btn {
-    width: 50%;
+    width: 40%;
   }
 
   #live-btn span,
   #src-btn span {
     font-size: 12px;
-    margin-right: 1px;
+    margin-right: 6px;
   }
 
   .see-live-icon,
