@@ -47,7 +47,7 @@ const data = [
     techs: ["NextJs", "PostgreSQL", "TailwindCSS"],
     dev: "FullStack",
     year: "2025",
-    liveLink: "#",
+    liveLink: "https://school-management-app-orcin.vercel.app/admin",
     githubLink: "https://github.com/Ibnballo1/school_app",
   },
   {
